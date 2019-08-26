@@ -26,6 +26,8 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount () {
+    script.src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+
     this.timeoutId = setTimeout(() => {
         this.setState({loading: ''});
     }, 100);
