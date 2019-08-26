@@ -1,9 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { ParallaxProvider } from 'react-scroll-parallax'
+
+import '../../node_modules/bootstrap-scss/bootstrap-grid.scss'
+import '../sass/custom.scss'
 
 import Header from '../components/Header'
 import Main from '../components/Main'
-import Footer from '../components/Footer'
+
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -92,9 +96,10 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout location={this.props.location}>
-        <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
-          <div id="wrapper">
-            <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
+        <ParallaxProvider scrollAxis="vertical" className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
+            <Header />
+            {/* <Img fluid={this.props.data.imageOne.childImageSharp.fluid} /> */}
+            {/* <OfficesFactories onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout}></OfficesFactories> */}
             <Main
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
@@ -103,10 +108,8 @@ class IndexPage extends React.Component {
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
             />
-            <Footer timeout={this.state.timeout} />
-          </div>
-          <div id="bg"></div>
-        </div>
+            {/* <Footer timeout={this.state.timeout} /> */}
+          </ParallaxProvider>
       </Layout>
     )
   }

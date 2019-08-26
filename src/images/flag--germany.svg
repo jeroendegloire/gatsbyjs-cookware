@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 21.5 21.49" enable-background="new 0 0 21.5 21.49" xml:space="preserve">
+<title>flag--germany</title>
+<g>
+	<g id="Layer_1-2">
+		<g>
+			<defs>
+				<circle id="SVGID_1_" cx="10.75" cy="10.75" r="10.75"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+			</clipPath>
+			<g clip-path="url(#SVGID_2_)">
+				<rect x="-7.86" y="14.33" fill="#FECD17" width="32.24" height="7.16"/>
+				<rect x="-7.86" y="7.16" fill="#DC0201" width="32.24" height="7.16"/>
+				<rect x="-7.86" width="32.24" height="7.16"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

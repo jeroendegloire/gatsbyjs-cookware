@@ -1,32 +1,87 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import breakpoint from 'styled-components-breakpoint'
 
-const Header = (props) => (
-    <header id="header" style={props.timeout ? {display: 'none'} : {}}>
-        <div className="logo">
-            <span className="icon fa-diamond"></span>
-        </div>
-        <div className="content">
-            <div className="inner">
-                <h1>Dimension</h1>
-                <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-                for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+import Navigation from '../components/Navigation'
+
+const StickyTop = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 7;
+
+  .navbar-brand img {
+    width: 90px;
+  }
+
+  .navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.2rem;
+    background: #3E3B3A;
+
+    .navbar-toggler {
+      padding: 0.25rem 0.75rem;
+      font-size: 1.25rem;
+      line-height: 1;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+      -webkit-appearance: button;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      img {
+        width: 30px;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+
+      ${breakpoint('desktop')`
+              flex-direction: row;
+          `}
+
+      li {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+
+        &:first-child {
+          display: none;
+        }
+      }
+
+      li a {
+        color: #fff;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 14px;
+        transition: 500ms;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+`
+
+const Header = props => (
+  <StickyTop>
+    <Navigation />
+  </StickyTop>
 )
-
-Header.propTypes = {
-    onOpenArticle: PropTypes.func,
-    timeout: PropTypes.bool
-}
 
 export default Header
