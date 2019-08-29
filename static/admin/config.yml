@@ -32,6 +32,8 @@ collections:
       - name: 'general'
         label: 'Site Settings'
         file: '_data/settings.json'
+        name: siteSettings
+        widget: object
         description: 'General Site Settings'
         fields:
           - { label: 'Seo title', name: 'site_title', widget: 'string' }
