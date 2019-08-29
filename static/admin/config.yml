@@ -1,8 +1,9 @@
 backend:
-  name: github
-  repo: jeroendegloire/gatsbyjs-cookware
+  name: git-gateway
+  branch: master
 
 media_folder: static/img
+public_folder: /img
 
 collections:
   - name: "blog"
