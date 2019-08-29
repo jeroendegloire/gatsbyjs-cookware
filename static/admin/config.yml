@@ -1,9 +1,14 @@
 backend:
   name: git-gateway
   branch: master
+  identity_url: "https://cookware-company.netlify.com/.netlify/identity"
+  gateway_url: "https://cookware-company.netlify.com/.netlify/git"
+  squash_merges: true
 
-media_folder: static/img
-public_folder: /img
+publish_mode: editorial_workflow
+media_folder: "assets/img/uploads"
+
+site_url: https://cookware-company.netlify.com
 
 collections:
   - name: "blog"
