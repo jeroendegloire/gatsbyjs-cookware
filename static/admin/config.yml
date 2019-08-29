@@ -1,9 +1,8 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: github
+  repo: jeroendegloire/gatsbyjs-cookware
 
 media_folder: static/img
-public_folder: /img
 
 collections:
   - name: "blog"
@@ -18,3 +17,17 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: 'settings'
+    label: 'Settings'
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: 'general'
+        label: 'Site Settings'
+        file: '_data/settings.json'
+        description: 'General Site Settings'
+        fields:
+          - { label: 'Seo title', name: 'site_title', widget: 'string' }
+          - { label: 'Meta description', name: 'site_meta_description', widget: 'string' }
+          - { label: 'Sharing image', name: 'site_meta_sharing_image', widget: 'image' }

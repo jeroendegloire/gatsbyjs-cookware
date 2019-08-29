@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "bootstrap-scss": "^4.3.1",
+    "netlify-cms-backend-fs": "^0.4.4",
     "prettier": "^1.14.2"
   },
   "repository": {
