@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import footerbg from '../images/footer-bg.jpg'
 import linkedin from '../images/linkedin.svg'
 
-const Footer = styled.section`
+const Footer = styled.footer`
   display: flex;
   align-items: flex-end;
   height: 380px;

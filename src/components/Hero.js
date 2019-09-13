@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 
 import logoSlogan from '../images/logo--slogan.svg'
 
-const Hero = styled.header`
+const Hero = styled.section`
   position: relative;
   height: 700px;
   z-index: 0;
@@ -51,7 +51,7 @@ const Hero = styled.header`
       color: #fff;
       margin-bottom: 30px;
 
-      ${breakpoint('tablet')`
+      ${breakpoint('md')`
         font-size: 82px;
         line-height: 84px;
       `}
@@ -89,7 +89,7 @@ export default () => (
           file(relativePath: { eq: "hero.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 2000, maxHeight: 700) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }

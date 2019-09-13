@@ -34,6 +34,14 @@ const StickyTop = styled.div`
       -webkit-appearance: button;
       cursor: pointer;
 
+      position: absolute;
+      top: 0.8rem;
+      right: 0.8rem;
+
+      ${breakpoint('lg')`
+        display: none;
+      `}
+
       &:focus {
         outline: none;
       }
@@ -44,15 +52,32 @@ const StickyTop = styled.div`
     }
 
     ul {
+      &.collapse {
+        display: none;
+      }
+
       display: flex;
       flex-direction: column;
       padding-left: 0;
       margin-bottom: 0;
       list-style: none;
 
-      ${breakpoint('desktop')`
-              flex-direction: row;
-          `}
+      padding: 1.5rem 0;
+      width: 100%;
+      text-align: center;
+      line-height: 42px;
+
+      a {
+        display: block;
+      }
+
+      ${breakpoint('lg')`
+          flex-direction: row;
+          width: auto;
+          padding 0;
+          line-height: inherit;
+          display: flex !important;
+      `}
 
       li {
         padding-left: 0;
@@ -73,15 +98,21 @@ const StickyTop = styled.div`
         padding-right: 1.5rem;
         padding-left: 1.5rem;
         text-transform: uppercase;
+
+        &:hover {
+          color: #cdd476 !important;
+        }
       }
     }
   }
 `
 
 const Header = props => (
-  <StickyTop>
-    <Navigation />
-  </StickyTop>
+  <header>
+    <StickyTop>
+      <Navigation />
+    </StickyTop>
+  </header>
 )
 
 export default Header

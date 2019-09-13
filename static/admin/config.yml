@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: github
+  repo: jeroendegloire/gatsbyjs-cookware
   identity_url: "https://cookware-company.netlify.com/.netlify/identity"
   gateway_url: "https://cookware-company.netlify.com/.netlify/git"
   squash_merges: true
@@ -23,19 +23,32 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: 'settings'
-    label: 'Settings'
-    delete: false # Prevent users from deleting documents in this collection
-    editor:
-      preview: false
+  - label: "Jobs"
+    name: "jobs"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     files:
-      - name: 'general'
-        label: 'Site Settings'
-        file: '_data/settings.json'
-        name: siteSettings
-        widget: object
-        description: 'General Site Settings'
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.yml"
         fields:
-          - { label: 'Seo title', name: 'site_title', widget: 'string' }
-          - { label: 'Meta description', name: 'site_meta_description', widget: 'string' }
-          - { label: 'Sharing image', name: 'site_meta_sharing_image', widget: 'image' }
+          - {label: Title, name: title, widget: string}
+          - {label: Intro text, name: intro, widget: text}
+          - {label: Image, name: image, widget: image}
+  - label: "Sitewide Options"
+    name: options
+    files:
+      - label: "Navigation menu"
+        name: nav
+        file: "content/nav.yml"
+        fields:
+          - label: "Nav Items"
+            label_singular: "Nav Item"
+            name: topLevelItems
+            widget: list
+            fields:
+              - {label: "Display Text", name: displayText, widget: string}
+              - {label: URL, name: url, widget: string}
+              - label: "Item Type"
+                name: itemType
+                widget: select
+                options: ["Link", "Button"]

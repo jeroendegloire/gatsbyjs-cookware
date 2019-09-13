@@ -14,7 +14,7 @@ import pan from '../images/pan.svg'
 import pot from '../images/pot.svg'
 
 const Kf_wrapper = styled.section`
-  padding: 60px 0px;
+  padding: 60px 0px 200px;
 
   .kf-title > h2 {
     font-family: Montserrat;
@@ -22,6 +22,7 @@ const Kf_wrapper = styled.section`
     font-size: 53px;
     color: #676260;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .kf-box {
@@ -59,67 +60,69 @@ const Kf = props => (
             <h2>Key figures 2018</h2>
           </div>
           <div className="row justify-content-center">
-            <div className="col-md-4 col-lg-3 col-sm-4 col-6">
-              <div className="kf-box-inner">
-                <div className="kf-box">
-                  <img src={kf_1} alt="Turnover" />
-                  <h3>
-                    $<CountUp duation={3} end={208} />m{' '}
-                  </h3>
-                  <span>TURNOVER 2018</span>
+            <div className="col-lg-9">
+              <div className="row justify-content-center">
+                <div className="col-md-4 col-6">
+                  <div className="kf-box-inner">
+                    <div className="kf-box">
+                      <img src={kf_1} alt="Turnover" />
+                      <h3>
+                        $<CountUp duation={3} end={208} />m{' '}
+                      </h3>
+                      <span>TURNOVER 2018</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-md-4 col-lg-3 col-sm-4 col-6">
-              <div className="kf-box-inner">
-                <div className="kf-box">
-                  <img src={kf_2} alt="Factories" />
-                  <h3>
-                    <CountUp duration={3} end={210886} separator="." /> m
-                    <sup>2</sup>
-                  </h3>
-                  <span>FACTORIES</span>
+                <div className="col-md-4 col-6">
+                  <div className="kf-box-inner">
+                    <div className="kf-box">
+                      <img src={kf_2} alt="Factories" />
+                      <h3>
+                        <CountUp duration={3} end={210886} separator="." /> m
+                        <sup>2</sup>
+                      </h3>
+                      <span>FACTORIES</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-md-4 col-lg-3 col-sm-4 col-6">
-              <div className="kf-box-inner">
-                <div className="kf-box">
-                  <img src={kf_3} alt="Capacity factories" />
-                  <h3>
-                    <CountUp
-                      duration={3}
-                      end={18.55}
-                      decimal=","
-                      decimals={2}
-                    />
-                    m/year
-                  </h3>
-                  <span>CAPACITY FACTORIES</span>
+                <div className="col-md-4 col-6">
+                  <div className="kf-box-inner">
+                    <div className="kf-box">
+                      <img src={kf_3} alt="Capacity factories" />
+                      <h3>
+                        <CountUp
+                          duration={3}
+                          end={18.55}
+                          decimal=","
+                          decimals={2}
+                        />
+                        m/year
+                      </h3>
+                      <span>CAPACITY FACTORIES</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-md-4 col-lg-3 col-sm-4 col-6">
-              <div className="kf-box-inner">
-                <div className="kf-box">
-                  <img src={kf_4} alt="Brands" />
-                  <h3>
-                    <CountUp duration={3} end={10} />
-                  </h3>
-                  <span>BRANDS</span>
+                <div className="col-md-4 col-6">
+                  <div className="kf-box-inner">
+                    <div className="kf-box">
+                      <img src={kf_4} alt="Brands" />
+                      <h3>
+                        <CountUp duration={3} end={10} />
+                      </h3>
+                      <span>BRANDS</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-md-4 col-lg-3 col-sm-4 col-6">
-              <div className="kf-box-inner">
-                <div className="kf-box">
-                  <img src={kf_5} alt="Employees" />
-                  <h3>
-                    <CountUp duration={3} end={1055} />
-                  </h3>
-                  <span>EMPLOYEES</span>
+                <div className="col-md-4 col-6">
+                  <div className="kf-box-inner">
+                    <div className="kf-box">
+                      <img src={kf_5} alt="Employees" />
+                      <h3>
+                        <CountUp duration={3} end={1055} />
+                      </h3>
+                      <span>EMPLOYEES</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -128,11 +131,11 @@ const Kf = props => (
       </div>
     </Fade>
 
-    <Parallax className="pan" x={[-80, -20]}  y={[0, 60]} tagOuter="figure">
+    <Parallax className="pan" x={[-80, -20]} y={[0, 60]} tagOuter="figure">
       <img src={pan} />
     </Parallax>
 
-    <Parallax className="pot" x={[120, 20]}  y={[0, 60]} tagOuter="figure">
+    <Parallax className="pot" x={[120, 20]} y={[0, 60]} tagOuter="figure">
       <img src={pot} />
     </Parallax>
   </Kf_wrapper>

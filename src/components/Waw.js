@@ -4,7 +4,7 @@ import breakpoint from 'styled-components-breakpoint'
 import { graphql, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { Parallax } from 'react-scroll-parallax'
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade'
 
 import timelineEven from '../images/timeline--even.png'
 import timelineOdd from '../images/timeline--odd.png'
@@ -46,18 +46,36 @@ const Waw = styled.section`
 
   .waw-inner {
     background: #d6d6cd;
-    padding: 100px 0px;
+    padding: 50px 0 120px;
     position: relative;
+
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      background: #d6d6cd;
+      height: 100%;
+      position: absolute;
+      top: -100px;
+      width: 125%;
+      -webkit-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
   }
 
   .waw-content-wrep {
     padding: 40px 0px;
+
+    .gatsby-image-wrapper {
+      height: 100%;
+    }
   }
 
   .waw-content-left {
     margin-bottom: 50px;
 
-    ${breakpoint('desktop')`
+    ${breakpoint('lg')`
       padding-right: 20px;
     `}
 
@@ -67,8 +85,7 @@ const Waw = styled.section`
   }
 
   .waw-content-right {
-
-    ${breakpoint('desktop')`
+    ${breakpoint('lg')`
       padding-left: 20px;
     `}
 
@@ -136,18 +153,17 @@ const Waw = styled.section`
     text-align: center;
     text-transform: uppercase;
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
 
   ul.timeline-content {
-    padding-top: 40px;
     display: flex;
     position: relative;
 
     &:before {
       content: '';
       position: absolute;
-      top: 54%;
+      top: 50%;
       height: 3px;
       background: #7c8c42;
       left: -25px;
@@ -161,16 +177,22 @@ const Waw = styled.section`
       right: -30px;
       width: 29px;
       height: 33px;
-      top: 54%;
+      top: 50%;
       transform: translateY(-45%);
       background-size: cover;
     }
 
     li {
-      padding: 0 15px;
       position: relative;
+      width: 12.5%;
 
-      &:nth-of-type(odd) {
+      .tc-item {
+        position: relative;
+      }
+    }
+
+    li:nth-of-type(odd) {
+
         background: url(${timelineOdd}) no-repeat center;
         background-size: 65px;
 
@@ -184,86 +206,57 @@ const Waw = styled.section`
           position: absolute;
           bottom: calc(50% + 20px);
         }
-
-        &::after {
-          display: block;
-          content: '';
-          width: 1px;
-          height: 85px;
-          background: #676260;
-          left: 50%;
-          position: absolute;
-          top: calc(50% + 20px);
-        }
+        
 
         .tc-item {
-          height: 200px;
-
-          &:last-child {
-            padding-top: 120px;
-          }
+          padding-bottom: 250px;
         }
+
+      }
+    }
+
+    li:nth-of-type(even) {
+      background: url(${timelineEven}) no-repeat center;
+      background-size: 65px;
+
+      &:after {
+        display: block;
+        content: '';
+        width: 1px;
+        height: 60px;
+        background: #676260;
+        left: 50%;
+        position: absolute;
+        top: calc(50% + 20px);
       }
 
-      &:nth-of-type(even) {
-        background: url(${timelineEven}) no-repeat center;
-        background-size: 65px;
-
-        &:before {
-          display: block;
-          content: '';
-          width: 1px;
-          height: 35px;
-          background: #676260;
-          left: 50%;
-          position: absolute;
-          bottom: calc(50% + 20px);
-        }
-
-        &:after {
-          display: block;
-          content: '';
-          width: 1px;
-          height: 35px;
-          background: #676260;
-          left: 50%;
-          position: absolute;
-          top: calc(50% + 20px);
-        }
-
-        .tc-item:first-child {
-          margin-top: 50px;
-        }
-
-        .tc-item:last-child {
-          padding-top: 70px;
-        }
+      .tc-item {
+        margin-top: 280px;
       }
     }
   }
 
   .tc-item {
-    max-width: 130px;
-    height: 150px;
-
     h5 {
       font-family: 'Montserrat';
       font-size: 35px;
       color: #7c8c42;
     }
 
-    span {
+    > div {
       font-size: 13px;
       color: #676260;
       font-family: 'Montserrat';
       font-weight: Bold;
       display: block;
       text-transform: uppercase;
+      hyphens: manual;
+      max-width: 120%;
+      background: #d6d6cd;
+      padding-bottom: 10%;
     }
   }
 `
-
-
 
 export default () => (
   <Waw className="page-section waw-wrep" id="waw">
@@ -273,28 +266,28 @@ export default () => (
           imageOne: file(relativePath: { eq: "greenpan-people.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 381, maxHeight: 172) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
           imageTwo: file(relativePath: { eq: "cookware-coocking.jpg" }) {
             childImageSharp {
               fluid(maxHeight: 177, maxWidth: 190) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
           imageThree: file(relativePath: { eq: "cookware-coocking-2.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 190, maxHeight: 176) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
           imageFour: file(relativePath: { eq: "cookware-coocking-3.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 192, maxHeight: 176) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
@@ -425,62 +418,62 @@ export default () => (
                             <li>
                               <div className="tc-item">
                                 <h5>2005</h5>
-                                <span>ANOTECH</span>
-                                <span>MANUFACTURING</span>
-                              </div>
-                              <div className="tc-item">
-                                <h5>2013</h5>
-                                <span>loyalty</span>
-                                <span>department</span>
+                                <div>
+                                  AQUISITION
+                                  <br />
+                                  ANOTECH MANUFACTURING
+                                </div>
                               </div>
                             </li>
                             <li>
                               <div className="tc-item">
                                 <h5>20..</h5>
-                                <span>
+                                <div>
+                                  AQUISITION
+                                  <br />
                                   THERMOLON<sup>TM</sup>
-                                </span>
-                              </div>
-                              <div className="tc-item">
-                                <h5>2016</h5>
-                                <span>INSTORE LOYALTYKITCHENAID</span>
+                                </div>
                               </div>
                             </li>
                             <li>
                               <div className="tc-item">
                                 <h5>2007</h5>
-                                <span>GREENPAN</span>
-                              </div>
-                              <div className="tc-item">
-                                <h5>2016</h5>
-                                <span>BLUE DIAMOND</span>
+                                <div>New brand greenpan</div>
                               </div>
                             </li>
                             <li>
                               <div className="tc-item">
                                 <h5>2011</h5>
-                                <span>GREENCHEF &amp; GREENLIFE</span>
-                              </div>
-                              <div className="tc-item">
-                                <h5>2018</h5>
-                                <span>
-                                  AQUISITION BK, KELTUM, GERO, VAN KEMPEN EN
-                                  BEGEER
-                                </span>
+                                <div>New brands GREENCHEF &amp; GREENLIFE</div>
                               </div>
                             </li>
                             <li>
                               <div className="tc-item">
-                                <h5>2012</h5>
-                                <span>
-                                  THE COOKWARE COMPANY USA &amp; 1ST DISTRIBUTOR
-                                </span>
+                                <h5>2013</h5>
+                                <div>Loyalty department</div>
                               </div>
+                            </li>
+                            <li>
                               <div className="tc-item">
-                                <h5>2019</h5>
-                                <span>aquistion</span>
-                                <span>merten &amp; storck,</span>
-                                <span>kochstar</span>
+                                <h5>2016</h5>
+                                <div>New brand blue diamond</div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="tc-item">
+                                <h5>2018</h5>
+                                <div>
+                                  aquistion BK, Keltum, Gero, Van Kempen en
+                                  begeer
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="tc-item">
+                                <h5>2018</h5>
+                                <div>
+                                  aquistion Merten &amp; Storck, Kochtar
+                                </div>
                               </div>
                             </li>
                           </ul>
