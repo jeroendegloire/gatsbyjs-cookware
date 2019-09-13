@@ -17,10 +17,6 @@ const Office = styled.div`
   }
 
   .back-icon {
-    position: absolute;
-    right: 100px;
-    bottom: 50px;
-    margin: 0 !important;
     width: 50px;
     cursor: pointer;
   }
@@ -88,7 +84,11 @@ export default () => (
                     </p>
                   </div>
                   <div className="col-md-7">
-                    <img className="logo-ms" src={Logo} alt="Merten &amp; storck"/>
+                    <img
+                      className="logo-ms"
+                      src={Logo}
+                      alt="Merten &amp; storck"
+                    />
                     <p>
                       Merten &amp; Storck is a manufacturing company in Germany,
                       with 145 years of experience in enameling cookware. The
@@ -98,22 +98,22 @@ export default () => (
                       bakeware to pressure cookers and preservers.
                     </p>
                   </div>
+
+                  <Link
+                    className="button-back"
+                    to="/"
+                    state={{
+                      noScroll: true,
+                    }}
+                  >
+                    <img src={backIcon} className="back-icon" alt="" />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <Link
-        className="button-back"
-        to="/"
-        state={{
-          noScroll: true,
-        }}
-      >
-        <img src={backIcon} className="back-icon" alt="" />
-      </Link>
     </Office>
   </Layout>
 )

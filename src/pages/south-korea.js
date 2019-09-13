@@ -17,10 +17,6 @@ const Office = styled.div`
   }
 
   .back-icon {
-    position: absolute;
-    right: 100px;
-    bottom: 50px;
-    margin: 0 !important;
     width: 50px;
     cursor: pointer;
   }
@@ -109,22 +105,22 @@ export default () => (
                       n°1 in ceramic non-stick.
                     </p>
                   </div>
+
+                  <Link
+                    className="button-back"
+                    to="/"
+                    state={{
+                      noScroll: true,
+                    }}
+                  >
+                    <img src={backIcon} className="back-icon" alt="" />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <Link
-        className="button-back"
-        to="/"
-        state={{
-          noScroll: true,
-        }}
-      >
-        <img src={backIcon} className="back-icon" alt="" />
-      </Link>
     </Office>
   </Layout>
 )

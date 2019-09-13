@@ -280,11 +280,6 @@ article {
 	> .row {
 		height: 100% !important;
 	}
-
-	.button-back img {
-		width: 120px;
-		height: auto;
-	}
 }
 
 .brand-popup {
@@ -371,11 +366,13 @@ article {
 }
 
 .temp-title {
-	padding: 45px 0px 70px;
-}
+	padding: 125px 0 90px;
+    text-align: center;
 
-.temp-header-bake .container {
-	max-width: 960px;
+	@media screen and (min-width: 768px) {
+		padding: 45px 0px 70px;
+		text-align: left;
+	}
 }
 
 .temp-title h1,
@@ -436,4 +433,23 @@ article {
 .temp .container {
 	position: relative;
     z-index: 1;
+}
+
+.city-temp-wrep {
+	position: relative;
+}
+
+.button-back {
+	position: absolute;
+    bottom: 0;
+	right: 2rem;
+	margin-bottom: 2rem;
+}
+
+.row.office-adderess > div {
+    margin-bottom: 3rem;
+}
+
+.temp-content-inner {
+	position: relative;
 }
