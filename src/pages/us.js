@@ -56,8 +56,8 @@ export default () => (
                 <div className="row ">
                   <div className="col-md-12">
                     <div className="temp-title">
-                      <h1>Anotech International UK Ltd.</h1>
-                      <h2>(United Kingdom)</h2>
+                      <h1>The Cookware Company USA </h1>
+                      <h2>(United States)</h2>
                     </div>
                   </div>
                 </div>
@@ -78,25 +78,15 @@ export default () => (
                     <div className="row">
                       <div className="col-md-7">
                         <div className="office-adderess">
-                          <h5>Anotech International UK Ltd.</h5>
                           <p>
-                            Unit 1H
-                            <br />
-                            Grovemere House
-                            <br />
-                            Lancaster Way Business Park
-                            <br />
-                            Ely, CB6 3NW
-                            <br />
-                            VAT: 980702221
-                            <br />
-                            HSBC GBP
-                            <br />
-                            IBAN: GB64 MIDL 4004 0961 861018 61861018
-                            <br />
-                            Routing N° 400409
-                            <br />
-                            SWIFT: MIDLGB22
+                            94 North Broadway <br />
+                            Irvington, New York 10533 <br />
+                            United States of America<br/>
+                            <br/>
+                            JP Morgan Chase Bank, N.A. <br />
+                            IBAN: 780159310 <br />
+                            Routing N° 021000021 <br />
+                            SWIFT: CHASUS33
                           </p>
                         </div>
                       </div>

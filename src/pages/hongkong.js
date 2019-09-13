@@ -56,8 +56,8 @@ export default () => (
                 <div className="row ">
                   <div className="col-md-12">
                     <div className="temp-title">
-                      <h1>Anotech International UK Ltd.</h1>
-                      <h2>(United Kingdom)</h2>
+                      <h1>The Cookware Company Asia Ltd.</h1>
+                      <h2>(Hong Kong)</h2>
                     </div>
                   </div>
                 </div>
@@ -80,23 +80,19 @@ export default () => (
                         <div className="office-adderess">
                           <h5>Anotech International UK Ltd.</h5>
                           <p>
-                            Unit 1H
+                            Unit 3201, 32/F, Tower 1, Enterprise Square Five{' '}
                             <br />
-                            Grovemere House
+                            38 Wang Chiu Road
                             <br />
-                            Lancaster Way Business Park
+                            Kowloon Bay, Hong Kong
                             <br />
-                            Ely, CB6 3NW
+                            +852 3171-2202 <br />
                             <br />
-                            VAT: 980702221
+                            Hang Seng Bank Limited
                             <br />
-                            HSBC GBP
+                            IBAN : 390-152767-201
                             <br />
-                            IBAN: GB64 MIDL 4004 0961 861018 61861018
-                            <br />
-                            Routing N° 400409
-                            <br />
-                            SWIFT: MIDLGB22
+                            SWIFT : HASEHKHH
                           </p>
                         </div>
                       </div>

@@ -302,7 +302,7 @@ export default () => (
                   <div className="waw-title">
                     <h2>Who are we?</h2>
                   </div>
-                  <div className="row no-gutters waw-content-wrep">
+                  <div className="row waw-content-wrep">
                     <div className="col-lg-6 waw-content-left">
                       <div className="waw-content-inner">
                         <div className="waw-content">

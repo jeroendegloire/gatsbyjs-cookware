@@ -56,8 +56,8 @@ export default () => (
                 <div className="row ">
                   <div className="col-md-12">
                     <div className="temp-title">
-                      <h1>Anotech International UK Ltd.</h1>
-                      <h2>(United Kingdom)</h2>
+                      <h1>GreenPan Japan Ltd.</h1>
+                      <h2>(Japan)</h2>
                     </div>
                   </div>
                 </div>
@@ -90,8 +90,7 @@ export default () => (
                             <br />
                             VAT: 980702221
                             <br />
-                            HSBC GBP
-                            <br />
+                            HSBC GBP <br />
                             IBAN: GB64 MIDL 4004 0961 861018 61861018
                             <br />
                             Routing N° 400409

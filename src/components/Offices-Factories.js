@@ -355,7 +355,7 @@ export default class OfficesFactoriesComponent extends React.Component {
                           </Link>
 
                           <Link to="china" asModal>
-                            <button className="dark-perot city-7">China</button>
+                            <button className="light-gray city-7">China</button>
                           </Link>
 
                           <Link to="south-korea" asModal>
