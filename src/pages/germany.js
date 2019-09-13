@@ -6,13 +6,14 @@ import Layout from '../components/layout'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 
-import HongKong from '../images/cb-icon-6.png'
+import Logo from '../images/merten-storck.svg'
+import Germany from '../images/cb-icon-8.png'
 import backIcon from '../images/back-icon.svg'
-import officesLegend from '../images/map-legend--offices.svg'
+import factoriesLegend from '../images/map-legend--factories.svg'
 
 const Office = styled.div`
   .temp:before {
-    background-image: url(${HongKong});
+    background-image: url(${Germany});
   }
 
   .back-icon {
@@ -30,7 +31,7 @@ const Office = styled.div`
 
   .temp-header-bake:after {
     content: '';
-    background: #7c8c42;
+    background: #b9b8ab;
     position: absolute;
     top: 0;
     left: 0;
@@ -43,6 +44,10 @@ const Office = styled.div`
     margin-left: -100px;
     margin-right: -100px;
   }
+
+  .logo-ms {
+    width: 200px;
+  }
 `
 
 export default () => (
@@ -50,14 +55,14 @@ export default () => (
     <Office className="city-temp-wrep">
       <div className="city-temp-wrep">
         <div className="city-temp-inner">
-          <div className="temp-header-bake temp dark-perot">
+          <div className="temp-header-bake temp">
             <div className="container">
               <div className="temp-header-inner">
                 <div className="row ">
                   <div className="col-md-12">
                     <div className="temp-title">
-                      <h1>Anotech International UK Ltd.</h1>
-                      <h2>(United Kingdom)</h2>
+                      <h1>Merten &amp; Storck</h1>
+                      <h2>(Drensteinfurt , Germany)</h2>
                     </div>
                   </div>
                 </div>
@@ -67,45 +72,30 @@ export default () => (
           <div className="temp-content-main">
             <div className="container">
               <div className="temp-content-inner pb100">
-                <div className="row ">
-                  <div className="col-md-7">
+                <div className="row office-adderess">
+                  <div className="col-md-5">
                     <div className="office-address-bake pt50">
                       <div className="office-icon pt60">
-                        <img src={officesLegend} alt="" />
-                        <span>Sales office</span>
+                        <img src={factoriesLegend} alt="" />
+                        <span>Factory</span>
                       </div>
                     </div>
-                    <div className="row">
-                      <div className="col-md-7">
-                        <div className="office-adderess">
-                          <h5>Anotech International UK Ltd.</h5>
-                          <p>
-                            Unit 1H
-                            <br />
-                            Grovemere House
-                            <br />
-                            Lancaster Way Business Park
-                            <br />
-                            Ely, CB6 3NW
-                            <br />
-                            VAT: 980702221
-                            <br />
-                            HSBC GBP
-                            <br />
-                            IBAN: GB64 MIDL 4004 0961 861018 61861018
-                            <br />
-                            Routing N° 400409
-                            <br />
-                            SWIFT: MIDLGB22
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                    <p>
+                      Am Ladestrang 1 <br />
+                      48317 Drensteinfurt <br />
+                      Deutschland
+                    </p>
                   </div>
-                  <div className="col-md-5">
-                    <div className="office-image pt60">
-                      <img src="images/i-7.png" alt="" />
-                    </div>
+                  <div className="col-md-7">
+                    <img className="logo-ms" src={Logo} alt="Merten &amp; storck"/>
+                    <p>
+                      Merten &amp; Storck is a manufacturing company in Germany,
+                      with 145 years of experience in enameling cookware. The
+                      company includes a 10.000 m² production facility and a
+                      3000 m² warehouse. Merten &amp; Storck has a yearly
+                      capacity of 550.000 units, varying from cookware and
+                      bakeware to pressure cookers and preservers.
+                    </p>
                   </div>
                 </div>
               </div>

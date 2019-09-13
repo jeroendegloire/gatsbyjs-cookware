@@ -77,7 +77,6 @@ export default () => (
                       <div className="row">
                         <div className="col-md-7">
                           <div className="office-adderess">
-                            <h5>Anotech International UK Ltd.</h5>
                             <p>
                               The Cookware Company BVBA
                               <br />

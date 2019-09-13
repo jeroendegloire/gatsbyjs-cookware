@@ -78,7 +78,6 @@ export default () => (
                     <div className="row">
                       <div className="col-md-7">
                         <div className="office-adderess">
-                          <h5>Anotech International UK Ltd.</h5>
                           <p>
                             Unit 3201, 32/F, Tower 1, Enterprise Square Five{' '}
                             <br />

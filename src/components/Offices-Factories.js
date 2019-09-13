@@ -19,7 +19,7 @@ import flagUs from '../images/flag--us.svg'
 import China from '../images/cb-icon-7.png'
 
 import SouthKorea from '../images/cb-icon-9.png'
-import Germany from '../images/cb-icon-8.png'
+
 import officesLegend from '../images/map-legend--offices.svg'
 import factoriesLegend from '../images/map-legend--factories.svg'
 import officesMarker from '../images/map-marker--offices.svg'
@@ -206,9 +206,6 @@ const OfficesFactories = styled.section`
   }
   .temp8:before {
     background-image: url(${SouthKorea});
-  }
-  .temp9:before {
-    background-image: url(${Germany});
   }
 `
 
