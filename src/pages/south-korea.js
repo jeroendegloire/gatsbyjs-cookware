@@ -6,14 +6,14 @@ import Layout from '../components/layout'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 
-import Logo from '../images/merten-storck.svg'
-import Germany from '../images/cb-icon-8.png'
+import Logo from '../images/thermolon.svg'
+import SouthKorea from '../images/cb-icon-9.png'
 import backIcon from '../images/back-icon.svg'
 import factoriesLegend from '../images/map-legend--factories.svg'
 
 const Office = styled.div`
   .temp:before {
-    background-image: url(${Germany});
+    background-image: url(${SouthKorea});
   }
 
   .back-icon {
@@ -46,7 +46,7 @@ const Office = styled.div`
   }
 
   .logo-ms {
-    width: 300px;
+    width: 400px;
     margin-bottom: 3rem;
   }
 `
@@ -62,8 +62,10 @@ export default () => (
                 <div className="row ">
                   <div className="col-md-12">
                     <div className="temp-title">
-                      <h1>Merten &amp; Storck</h1>
-                      <h2>(Drensteinfurt , Germany)</h2>
+                      <h1>
+                        Thermolon<sup>TM</sup>
+                      </h1>
+                      <h2>(Busan , Republic of Korea)</h2>
                     </div>
                   </div>
                 </div>
@@ -82,20 +84,29 @@ export default () => (
                       </div>
                     </div>
                     <p>
-                      Am Ladestrang 1 <br />
-                      48317 Drensteinfurt <br />
-                      Deutschland
+                      1530-2, Songjeong-dong, Gangseo-gu,
+                      <br />
+                      Busan, Republic of Korea
+                      <br />
+                      +82 51 831 8863
                     </p>
                   </div>
                   <div className="col-md-7">
-                    <img className="logo-ms" src={Logo} alt="Merten &amp; storck"/>
+                    <img className="logo-ms" src={Logo} alt="Thermolon" />
                     <p>
-                      Merten &amp; Storck is a manufacturing company in Germany,
-                      with 145 years of experience in enameling cookware. The
-                      company includes a 10.000 m² production facility and a
-                      3000 m² warehouse. Merten &amp; Storck has a yearly
-                      capacity of 550.000 units, varying from cookware and
-                      bakeware to pressure cookers and preservers.
+                      The Thermolon™ factory is located in South-Korea and
+                      includes an R&D department as well as research
+                      laboratories. Thermolon has always been a pioneer in
+                      ceramic non-stick and the Thermolon™ coating technology is
+                      based on more than 20 years of experience in the field of
+                      ceramic non-stick.
+                      <br />
+                      <br />
+                      High technology and outstanding functionality are at the
+                      core of the patented Thermolon™ non-stick coating. That’s
+                      why Thermolon keeps developing and improving ceramic
+                      coatings for cookware, securing its position as worldwide
+                      n°1 in ceramic non-stick.
                     </p>
                   </div>
                 </div>

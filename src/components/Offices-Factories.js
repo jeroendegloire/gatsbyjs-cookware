@@ -16,10 +16,6 @@ import flagSouthKorea from '../images/flag--south-korea.svg'
 import flagUk from '../images/flag--uk.svg'
 import flagUs from '../images/flag--us.svg'
 
-import China from '../images/cb-icon-7.png'
-
-import SouthKorea from '../images/cb-icon-9.png'
-
 import officesLegend from '../images/map-legend--offices.svg'
 import factoriesLegend from '../images/map-legend--factories.svg'
 import officesMarker from '../images/map-marker--offices.svg'
@@ -91,27 +87,27 @@ const OfficesFactories = styled.section`
   }
 
   .marker1 {
-    left: calc(27% - 25px);
+    left: calc(29% - 25px);
     top: calc(29% - 30px);
   }
 
   .marker2 {
-    left: calc(45% - 25px);
+    left: calc(47% - 25px);
     top: calc(23.5% - 30px);
   }
 
   .marker3 {
-    left: calc(47.5% - 25px);
+    left: calc(49.5% - 25px);
     top: calc(27% - 30px);
   }
 
   .marker4 {
-    left: calc(50% - 25px);
+    left: calc(52% - 25px);
     top: calc(25% - 30px);
   }
 
   .marker5 {
-    left: calc(52% - 25px);
+    left: calc(54% - 25px);
     top: calc(26% - 30px);
   }
 
@@ -122,11 +118,11 @@ const OfficesFactories = styled.section`
 
   .marker7 {
     left: calc(79.5% - 25px);
-    top: calc(44% - 30px);
+    top: calc(43% - 30px);
   }
 
   .marker8 {
-    left: calc(82% - 25px);
+    left: calc(82.6% - 25px);
     top: calc(36% - 30px);
   }
 
@@ -200,12 +196,6 @@ const OfficesFactories = styled.section`
   }
   .city-9:before {
     background-image: url(${flagGermany});
-  }
-  .temp7:before {
-    background-image: url(${China});
-  }
-  .temp8:before {
-    background-image: url(${SouthKorea});
   }
 `
 

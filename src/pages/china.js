@@ -6,14 +6,14 @@ import Layout from '../components/layout'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 
-import Logo from '../images/merten-storck.svg'
-import Germany from '../images/cb-icon-8.png'
+import Logo from '../images/anotech.jpg'
+import China from '../images/cb-icon-7.png'
 import backIcon from '../images/back-icon.svg'
 import factoriesLegend from '../images/map-legend--factories.svg'
 
 const Office = styled.div`
   .temp:before {
-    background-image: url(${Germany});
+    background-image: url(${China});
   }
 
   .back-icon {
@@ -46,7 +46,6 @@ const Office = styled.div`
   }
 
   .logo-ms {
-    width: 300px;
     margin-bottom: 3rem;
   }
 `
@@ -62,8 +61,8 @@ export default () => (
                 <div className="row ">
                   <div className="col-md-12">
                     <div className="temp-title">
-                      <h1>Merten &amp; Storck</h1>
-                      <h2>(Drensteinfurt , Germany)</h2>
+                      <h1>ANOTECH</h1>
+                      <h2>(Jiangmen, China)</h2>
                     </div>
                   </div>
                 </div>
@@ -82,20 +81,32 @@ export default () => (
                       </div>
                     </div>
                     <p>
-                      Am Ladestrang 1 <br />
-                      48317 Drensteinfurt <br />
-                      Deutschland
+                      Jiangmen Anotech Cookware <br />
+                      Manufacturing Company Ltd. <br />
+                      No. 28, Jinou Road, Jiang Hai District,
+                      <br />
+                      Jiangmen, Guangdong
+                      <br />
+                      People’s Republic of China
                     </p>
                   </div>
                   <div className="col-md-7">
-                    <img className="logo-ms" src={Logo} alt="Merten &amp; storck"/>
+                    <img
+                      className="logo-ms"
+                      src={Logo}
+                      alt="Merten &amp; storck"
+                    />
                     <p>
-                      Merten &amp; Storck is a manufacturing company in Germany,
-                      with 145 years of experience in enameling cookware. The
-                      company includes a 10.000 m² production facility and a
-                      3000 m² warehouse. Merten &amp; Storck has a yearly
-                      capacity of 550.000 units, varying from cookware and
-                      bakeware to pressure cookers and preservers.
+                      Anotech is a manufacturing company in Hong Kong,
+                      specialized in cookware products. The company consists of
+                      an Engineering &amp; R&amp;D department, a QC/QA
+                      department and a factory. <br />
+                      <br />
+                      The production facility has a yearly capacity of about 18
+                      million pieces, covering a wide range of non-stick and
+                      dishwasher coatings. Its automated production processes
+                      are environmentally friendly and state-of-the-art
+                      technology ensures high-quality standards.
                     </p>
                   </div>
                 </div>
