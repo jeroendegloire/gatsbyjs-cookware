@@ -64,21 +64,6 @@ const Hero = styled.section`
       max-width: 200px;
     }
   }
-
-  .animate-pop-in {
-    animation: pop-in 0.4s ease-out forwards;
-  }
-
-  @keyframes pop-in {
-    0% {
-      opacity: 0;
-      transform: translate7(-1.5rem);
-    }
-    100% {
-      opacity: 1;
-      transform: none;
-    }
-  }
 `
 
 export default () => (

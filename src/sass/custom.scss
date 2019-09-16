@@ -283,7 +283,6 @@ article {
 }
 
 .brand-popup {
-
 	.gatsby-image-wrapper {
 		height: 300px;
 
@@ -314,6 +313,7 @@ article {
 
 		@media screen and (min-width: 768px) {
 			padding: 5rem 4rem;
+			align-self: center;
 		}
 	}
 
@@ -389,7 +389,7 @@ article {
 
 .temp-title {
 	padding: 125px 0 90px;
-    text-align: center;
+	text-align: center;
 
 	@media screen and (min-width: 768px) {
 		padding: 45px 0px 70px;
@@ -454,7 +454,7 @@ article {
 
 .temp .container {
 	position: relative;
-    z-index: 1;
+	z-index: 1;
 }
 
 .city-temp-wrep {
@@ -463,13 +463,13 @@ article {
 
 .button-back {
 	position: absolute;
-    bottom: 0;
+	bottom: 0;
 	right: 2rem;
 	margin-bottom: 2rem;
 }
 
 .row.office-adderess > div {
-    margin-bottom: 3rem;
+	margin-bottom: 3rem;
 }
 
 .temp-content-inner {
@@ -482,4 +482,19 @@ iframe {
 
 .mt1rem {
 	margin-top: 1rem;
+}
+
+.animate-pop-in {
+	animation: pop-in 0.4s ease-out forwards;
+}
+
+@keyframes pop-in {
+	0% {
+		opacity: 0;
+		transform: translate7(-1.5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
 }
