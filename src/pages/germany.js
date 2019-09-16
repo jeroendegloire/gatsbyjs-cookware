@@ -5,6 +5,7 @@ import { Link } from 'gatsby-plugin-modal-routing'
 import Layout from '../components/layout'
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
+import Iframe from 'react-iframe'
 
 import Logo from '../images/merten-storck.svg'
 import Germany from '../images/cb-icon-8.png'
@@ -82,6 +83,17 @@ export default () => (
                       48317 Drensteinfurt <br />
                       Deutschland
                     </p>
+
+                    <div className="mt1rem">
+                      <Iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.4899150605447!2d7.730231015780639!3d51.79720827968382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9a0387fd5f303%3A0xd9335092d83aa5d6!2sAm%20Ladestrang%201%2C%2048317%20Drensteinfurt%2C%20Germany!5e0!3m2!1sen!2sbe!4v1568619654972!5m2!1sen!2sbe"
+                        width="100%"
+                        height="250"
+                        frameborder="0"
+                        style="border:0;"
+                        allowfullscreen=""
+                      />
+                    </div>
                   </div>
                   <div className="col-md-7">
                     <img

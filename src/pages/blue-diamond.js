@@ -73,16 +73,6 @@ export default () => (
               <span>&#8250;&#8250;</span> VISIT WEBSITE
             </a>
 
-            <Link
-              className="button-back"
-              to="/"
-              state={{
-                noScroll: true,
-              }}
-            >
-              <img src={backIcon} className="back-icon" alt="" />
-            </Link>
-
             <div className="image-row-wrapper">
               <div className="image-wrapper">
                 <Img fluid={data.thumbnail1.childImageSharp.fluid} />

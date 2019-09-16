@@ -231,32 +231,41 @@ export default class OfficesFactoriesComponent extends React.Component {
                         <img alt="" src={map} />
                       </div>
                       <div className="map-markers hidetablet">
-                        <div
-                          className="map-markers__mark map-markers__mark--offices marker1"
-                          data-fancybox="temp1"
-                          data-src="#temp1"
-                        ></div>
-                        <div
-                          className="map-markers__mark map-markers__mark--offices marker2"
-                          data-left="45%"
-                          data-top="23.5%"
-                          data-fancybox="temp2"
-                          data-src="#temp2"
-                        ></div>
-                        <div
-                          className="map-markers__mark map-markers__mark--offices marker3"
-                          data-left="47.5%"
-                          data-top="27%"
-                          data-fancybox="temp3"
-                          data-src="#temp3"
-                        ></div>
-                        <div
-                          className="map-markers__mark map-markers__mark--offices marker4"
-                          data-left="50%"
-                          data-top="25%"
-                          data-fancybox="temp4"
-                          data-src="#temp4"
-                        ></div>
+                        <Link to="us" asModal>
+                          <div
+                            className="map-markers__mark map-markers__mark--offices marker1"
+                            data-fancybox="temp1"
+                            data-src="#temp1"
+                          ></div>
+                        </Link>
+                        <Link to="uk" asModal>
+                          <div
+                            className="map-markers__mark map-markers__mark--offices marker2"
+                            data-left="45%"
+                            data-top="23.5%"
+                            data-fancybox="temp2"
+                            data-src="#temp2"
+                          ></div>
+                        </Link>
+                        <Link to="belgium" asModal>
+                          <div
+                            className="map-markers__mark map-markers__mark--offices marker3"
+                            data-left="47.5%"
+                            data-top="27%"
+                            data-fancybox="temp3"
+                            data-src="#temp3"
+                          ></div>
+                        </Link>
+                        <Link to="netherlands" asModal>
+                          <div
+                            className="map-markers__mark map-markers__mark--offices marker4"
+                            data-left="50%"
+                            data-top="25%"
+                            data-fancybox="temp4"
+                            data-src="#temp4"
+                          ></div>
+                        </Link>
+                        <Link to="germany" asModal>
                         <div
                           className="map-markers__mark map-markers__mark--factories marker5"
                           data-left="52%"
@@ -264,6 +273,8 @@ export default class OfficesFactoriesComponent extends React.Component {
                           data-fancybox="temp5"
                           data-src="#temp5"
                         ></div>
+                        </Link>
+                        <Link to="china" asModal>
                         <div
                           className="map-markers__mark map-markers__mark--factories marker6"
                           data-left="78%"
@@ -271,6 +282,8 @@ export default class OfficesFactoriesComponent extends React.Component {
                           data-fancybox="temp6"
                           data-src="#temp6"
                         ></div>
+                        </Link>
+                        <Link to="hongkong" asModal>
                         <div
                           className="map-markers__mark map-markers__mark--offices marker7"
                           data-left="79.5%"
@@ -278,6 +291,8 @@ export default class OfficesFactoriesComponent extends React.Component {
                           data-fancybox="temp7"
                           data-src="#temp7"
                         ></div>
+                        </Link>
+                        <Link to="south-korea" asModal>
                         <div
                           className="map-markers__mark map-markers__mark--factories marker8"
                           data-left="82%"
@@ -285,6 +300,8 @@ export default class OfficesFactoriesComponent extends React.Component {
                           data-fancybox="temp8"
                           data-src="#temp8"
                         ></div>
+                        </Link>
+                        <Link to="japan" asModal>
                         <div
                           className="map-markers__mark map-markers__mark--offices marker9"
                           data-left="85.5%"
@@ -292,6 +309,7 @@ export default class OfficesFactoriesComponent extends React.Component {
                           data-fancybox="temp9"
                           data-src="#temp9"
                         ></div>
+                        </Link>
                       </div>
                     </div>
                   </div>
