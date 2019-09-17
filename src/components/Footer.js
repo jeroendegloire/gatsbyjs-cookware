@@ -43,7 +43,7 @@ export default () => (
       <p>
         Do you have general questions or remarks on our products? Let us know:{' '}
         <a href="mailto:info@cookware-co.com">info@cookware-co.com</a><br/>
-        Find us on:&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/company/thecookwarecompany" target="_blank" rel="noreferrer"><img src={linkedin} className="linkedin" /></a><br/>
+        Find us on:&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/company/thecookwarecompany" target="_blank" rel="noopener noreferrer"><img src={linkedin} className="linkedin" /></a><br/>
         © {new Date().getFullYear()} Cookware Company All Rights Reserved.
       </p>
     </div>

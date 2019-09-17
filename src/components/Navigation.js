@@ -39,7 +39,7 @@ class Navigation extends React.Component {
               Key figures
             </AnchorLink>
           </li>
-          <li className="nav-item">
+          <li className="nav-item hidden">
             <AnchorLink offset="63" href="#waw">
               Who we are?
             </AnchorLink>

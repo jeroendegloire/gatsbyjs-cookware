@@ -70,7 +70,7 @@ export default () => (
               href="https://chopandgrill.greenpan.com/"
               className="link"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <span>&#8250;&#8250;</span> VISIT WEBSITE
             </a>
