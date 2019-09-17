@@ -1,5 +1,6 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link } from 'gatsby-plugin-modal-routing'
 
 import toggle from '../images/menu.svg'
 import logo from '../images/logo.svg'
@@ -57,6 +58,11 @@ class Navigation extends React.Component {
             <AnchorLink offset="63" href="#brands">
               Brands
             </AnchorLink>
+          </li>
+          <li className="nav-item">
+            <Link to="vacancies" asModal>
+              Vacancies
+            </Link>
           </li>
         </ul>
 

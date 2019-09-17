@@ -300,7 +300,7 @@ export default () => (
               <div className="row justify-content-center">
                 <div className="col-lg-9">
                   <div className="waw-title">
-                    <h2>Who are we?</h2>
+                    <h2>Who we are?</h2>
                   </div>
                   <div className="row waw-content-wrep">
                     <div className="col-lg-6 waw-content-left">
@@ -463,7 +463,7 @@ export default () => (
                               <div className="tc-item">
                                 <h5>2018</h5>
                                 <div>
-                                  aquistion BK, Keltum, Gero, Van Kempen en
+                                  aquisition BK, Keltum, Gero, Van Kempen en
                                   begeer
                                 </div>
                               </div>
@@ -472,7 +472,7 @@ export default () => (
                               <div className="tc-item">
                                 <h5>2018</h5>
                                 <div>
-                                  aquistion Merten &amp; Storck, Kochtar
+                                  aquisition Merten &amp; Storck, Kochstar
                                 </div>
                               </div>
                             </li>

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { graphql, StaticQuery } from 'gatsby'
+import { Link } from 'gatsby-plugin-modal-routing'
 
 import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
@@ -92,7 +92,7 @@ const Vacancies = styled.div`
     text-align: center;
   }
 
-  .city-name button {
+  .city-name a {
     display: inline-block;
     line-height: 1rem;
     width: 115px;
@@ -178,7 +178,7 @@ const VacanciesPage = () => (
             query VacanciesQuery {
               file(relativePath: { eq: "hero_vacancies.jpg" }) {
                 childImageSharp {
-                  fluid(maxWidth: 2000, maxHeight: 400) {
+                  fluid(maxWidth: 1600, maxHeight: 400) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }
@@ -237,30 +237,38 @@ const VacanciesPage = () => (
             <div className="city-name-wrep">
               <div className="city-name-inner">
                 <div className="city-name">
-                  <Link to="belgium" asModal>
-                    <button className="dark-perot city-1">
-                      Belgium office
-                    </button>
-                  </Link>
+                  <a
+                    className="dark-perot city-1"
+                    target="_blank" rel="noopener noreferrer"
+                    href="https://www.greenpan.be/nl-be/vacatures"
+                  >
+                    Belgium office
+                  </a>
 
-                  <Link to="netherlands" asModal>
-                    <button className="dark-perot city-2">
-                      Netherland office
-                    </button>
-                  </Link>
+                  <a
+                    className="dark-perot city-2"
+                    target="_blank" rel="noopener noreferrer"
+                    href="https://www.bk.nl/vacatures"
+                  >
+                    Netherland office
+                  </a>
 
-                  <Link to="uk" asModal>
-                    <button className="dark-perot city-3">
-                      Us <br />
-                      office
-                    </button>
-                  </Link>
+                  <a
+                    className="dark-perot city-3"
+                    target="_blank" rel="noopener noreferrer"
+                    href="https://www.greenpan.be/nl-be/vacatures"
+                  >
+                    Us <br />
+                    office
+                  </a>
 
-                  <Link to="us" asModal>
-                    <button className="dark-perot city-4">
-                      Hong Kong office
-                    </button>
-                  </Link>
+                  <a
+                    className="dark-perot city-4"
+                    target="_blank" rel="noopener noreferrer"
+                    href="https://www.greenpan.be/nl-be/vacatures"
+                  >
+                    Hong Kong office
+                  </a>
                 </div>
               </div>
             </div>
