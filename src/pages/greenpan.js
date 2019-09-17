@@ -69,7 +69,7 @@ export default () => (
               className="link"
               href="https://www.greenpan.com/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <span>&#8250;&#8250;</span> VISIT WEBSITE
             </a>

@@ -64,7 +64,7 @@ export default () => (
               </p>
             </div>
 
-            <a href="https://www.food-e.us/" className="link" target="_blank" rel="noreferrer">
+            <a href="https://www.food-e.us/" className="link" target="_blank" rel="noopener noreferrer">
               <span>&#8250;&#8250;</span> VISIT WEBSITE
             </a>
 

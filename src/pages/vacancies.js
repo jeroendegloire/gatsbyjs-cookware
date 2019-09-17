@@ -167,6 +167,19 @@ const Vacancies = styled.div`
   .dark-perot {
     background: #7c8c42;
   }
+
+  .button-back {
+    position: relative;
+    bottom: 4rem;
+    text-align: center;
+    display: block;
+    margin-top: 4rem;
+    margin-bottom: 0;
+
+    img {
+      width: 80px;
+    }
+  }
 `
 
 const VacanciesPage = () => (
@@ -256,19 +269,12 @@ const VacanciesPage = () => (
                   <a
                     className="dark-perot city-3"
                     target="_blank" rel="noopener noreferrer"
-                    href="https://www.greenpan.be/nl-be/vacatures"
+                    href="https://www.greenpan.us/wewantyou"
                   >
                     Us <br />
                     office
                   </a>
 
-                  <a
-                    className="dark-perot city-4"
-                    target="_blank" rel="noopener noreferrer"
-                    href="https://www.greenpan.be/nl-be/vacatures"
-                  >
-                    Hong Kong office
-                  </a>
                 </div>
               </div>
             </div>
