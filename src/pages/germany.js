@@ -117,7 +117,13 @@ export default () => (
                     </p>
                   </div>
 
-                  <Link
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Link
                     className="button-back"
                     to="/"
                     state={{
@@ -126,12 +132,6 @@ export default () => (
                   >
                     <img src={backIcon} className="back-icon" alt="" />
                   </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </Office>
   </Layout>
 )
