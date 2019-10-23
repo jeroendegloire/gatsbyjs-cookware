@@ -57,11 +57,20 @@ const Kf_wrapper = styled.section`
       font-size: 35px;
       font-family: Montserrat;
       font-weight: 700;
-      margin: 15px 0px;
+      margin: 10px 0px;
     }
 
-    > span {
-      color: #cdd476;
+    .more-then {
+      color: #414042;
+      font-family: Montserrat;
+      font-size: 12px;
+      letter-spacing: 2px;
+      display: block;
+      margin-top: 15px;
+    }
+
+    > span:last-child {
+      color: #7C8C42;
       font-family: Montserrat;
       font-size: 16px;
       letter-spacing: 2px;
@@ -84,7 +93,7 @@ const Kf = props => (
                   <div className="kf-box-inner">
                     <div className="kf-box">
                       <img src={kf_1} alt="Turnover" />
-                      <span>MORE THAN</span>
+                      <span className="more-then">MORE THAN</span>
                       <h3>
                         $<CountUp duation={3} end={200} />m{' '}
                       </h3>
@@ -96,7 +105,7 @@ const Kf = props => (
                   <div className="kf-box-inner">
                     <div className="kf-box">
                       <img src={kf_2} alt="Factories" />
-                      <span>MORE THAN</span>
+                      <span className="more-then">MORE THAN</span>
                       <h3>
                         <CountUp duration={3} end={200000} separator="." /> m
                         <sup>2</sup>
@@ -109,7 +118,7 @@ const Kf = props => (
                   <div className="kf-box-inner">
                     <div className="kf-box">
                       <img src={kf_3} alt="Capacity factories" />
-                      <span>MORE THAN</span>
+                      <span className="more-then">MORE THAN</span>
                       <h3>
                         <CountUp
                           duration={3}
@@ -125,7 +134,7 @@ const Kf = props => (
                   <div className="kf-box-inner">
                     <div className="kf-box">
                       <img src={kf_4} alt="Brands" />
-                      <span>MORE THAN</span>
+                      <span className="more-then">MORE THAN</span>
                       <h3>
                         <CountUp duration={3} end={10} />
                       </h3>
@@ -137,7 +146,7 @@ const Kf = props => (
                   <div className="kf-box-inner">
                     <div className="kf-box">
                       <img src={kf_5} alt="Employees" />
-                      <span>MORE THAN</span>
+                      <span className="more-then">MORE THAN</span>
                       <h3>
                         <CountUp duration={3} end={2000} />
                       </h3>
@@ -149,7 +158,7 @@ const Kf = props => (
                   <div className="kf-box-inner">
                     <div className="kf-box">
                       <img src={kf_6} alt="TRADEMARKS" />
-                      <span>MORE THAN</span>
+                      <span className="more-then">MORE THAN</span>
                       <h3>
                         <CountUp duration={3} end={2000} />
                       </h3>
