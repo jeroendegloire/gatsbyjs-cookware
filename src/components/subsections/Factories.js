@@ -1,10 +1,11 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
 import { Link } from 'gatsby-plugin-modal-routing'
+import { Parallax } from 'react-scroll-parallax'
 import styled from 'styled-components'
 
 import factories from '../../images/factories.svg'
-
+import forkknife from '../../images/fork-knife.svg'
 import flagChina from '../../images/flag--china.svg'
 import flagGermany from '../../images/flag--germany.svg'
 import flagSouthKorea from '../../images/flag--south-korea.svg'
@@ -32,6 +33,9 @@ const Factories = styled.section`
 
 export default () => (
     <Factories className="waw-factories-bake">
+      <Parallax className="fork-knife" x={[50, 10]} tagOuter="figure">
+                <img src={forkknife} />
+              </Parallax>
       <Fade>
         <div>
       <div className="container">

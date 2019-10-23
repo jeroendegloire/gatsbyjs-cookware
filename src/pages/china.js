@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 import Iframe from 'react-iframe'
 
-import Logo from '../images/anotech.jpg'
+import Logo from '../images/logo_anotech.jpg'
 import China from '../images/cb-icon-7.png'
 import backIcon from '../images/back-icon.svg'
 import factoriesLegend from '../images/map-legend--factories.svg'
@@ -77,7 +77,25 @@ export default () => (
                         <span>Factory</span>
                       </div>
                     </div>
+
+                    <h3>Who to contact?</h3>
+
+                      <ul className="contact-list">
+                        <li>GOLDEN LEE <span className="function">PRESIDENT</span></li>
+                        <li>JENNY HUANG <span className="function">CFO</span></li>
+                      </ul>
+                      
+                    <Iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.7081223891414!2d113.09610131495923!3d22.552603985193123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34022482cb41dad7%3A0xf1cfd277ea095f58!2s28%20Jin&#39;ou%20Rd%2C%20Jianghai%20Qu%2C%20Jiangmen%20Shi%2C%20Guangdong%20Sheng%2C%20China%2C%20529020!5e0!3m2!1sen!2sbe!4v1568619611456!5m2!1sen!2sbe"
+                        width="100%"
+                        height="250"
+                        frameborder="0"
+                        style="border:0;"
+                        allowfullscreen=""
+                      />
+
                     <p>
+                      <br/>
                       Jiangmen Anotech Cookware <br />
                       Manufacturing Company Ltd. <br />
                       No. 28, Jinou Road, Jiang Hai District,
@@ -88,14 +106,7 @@ export default () => (
                     </p>
 
                     <div className="mt1rem">
-                      <Iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.7081223891414!2d113.09610131495923!3d22.552603985193123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34022482cb41dad7%3A0xf1cfd277ea095f58!2s28%20Jin&#39;ou%20Rd%2C%20Jianghai%20Qu%2C%20Jiangmen%20Shi%2C%20Guangdong%20Sheng%2C%20China%2C%20529020!5e0!3m2!1sen!2sbe!4v1568619611456!5m2!1sen!2sbe"
-                        width="100%"
-                        height="250"
-                        frameborder="0"
-                        style="border:0;"
-                        allowfullscreen=""
-                      />
+                      
                     </div>
                   </div>
                   <div className="col-md-7">

@@ -80,6 +80,14 @@ const Kf_wrapper = styled.section`
 
 const Kf = props => (
   <Kf_wrapper className="page-section" id="kf">
+    <Parallax className="pan" x={[-80, -20]} y={[0, 60]} tagOuter="figure">
+      <img src={pan} />
+    </Parallax>
+
+    <Parallax className="pot" x={[120, 20]} y={[0, 60]} tagOuter="figure">
+      <img src={pot} />
+    </Parallax>
+
     <Fade>
       <div className="container">
         <div className="kf-title-bake">
@@ -172,14 +180,6 @@ const Kf = props => (
         </div>
       </div>
     </Fade>
-
-    <Parallax className="pan" x={[-80, -20]} y={[0, 60]} tagOuter="figure">
-      <img src={pan} />
-    </Parallax>
-
-    <Parallax className="pot" x={[120, 20]} y={[0, 60]} tagOuter="figure">
-      <img src={pot} />
-    </Parallax>
   </Kf_wrapper>
 )
 

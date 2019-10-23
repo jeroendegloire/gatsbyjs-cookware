@@ -80,16 +80,12 @@ export default () => (
                         <span>Factory</span>
                       </div>
                     </div>
-                    <p>
-                      1530-2, Songjeong-dong, Gangseo-gu,
-                      <br />
-                      Busan, Republic of Korea
-                      <br />
-                      +82 51 831 8863
-                    </p>
+                    <h3>Who to contact?</h3>
 
-                    <div className="mt1rem">
-                      <Iframe
+                      <ul className="contact-list">
+                        <li>C.K. PARK <span className="function">PRESIDENT</span></li>
+                      </ul>
+                    <Iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.118698552834!2d-73.86488618458486!3d41.04453327929718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2eb22de4964a9%3A0x51ce794de04add2e!2s94%20N%20Broadway%2C%20Irvington%2C%20NY%2010533%2C%20USA!5e0!3m2!1sen!2sbe!4v1568621883533!5m2!1sen!2sbe"
                         width="100%"
                         height="250"
@@ -97,7 +93,14 @@ export default () => (
                         style="border:0;"
                         allowfullscreen=""
                       />
-                    </div>
+                    <p>
+                      <br/>
+                      1530-2, Songjeong-dong, Gangseo-gu,
+                      <br />
+                      Busan, Republic of Korea
+                      <br />
+                      +82 51 831 8863
+                    </p>
                   </div>
                   <div className="col-md-7">
                     <img className="logo-ms" src={Logo} alt="Thermolon" />

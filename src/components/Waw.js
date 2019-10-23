@@ -396,13 +396,5 @@ export default () => (
         </div>
       )}
     />
-
-    <Parallax className="pot-2" x={[-80, -20]} y={[80, 100]} tagOuter="figure">
-      <img src={pot2} />
-    </Parallax>
-
-    <Parallax className="fork" x={[80, -30]} y={[50, 10]} tagOuter="figure">
-      <img src={fork} />
-    </Parallax>
   </Waw>
 )

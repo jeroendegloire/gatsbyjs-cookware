@@ -253,6 +253,10 @@ const Waw = styled.section`
 
 export default () => (
   <Waw className="page-section waw-wrep" id="waw">
+    <Parallax className="pot-2" x={[-80, -20]} y={[80, 100]} tagOuter="figure">
+      <img src={pot2} />
+    </Parallax>
+
     <StaticQuery
       query={graphql`
         query HistoryQuery {
@@ -379,9 +383,8 @@ GERO, VAN KEMPEN EN BEGEER
         </div>
       )}
     />
-
-    <Parallax className="pot-2" x={[-80, -20]} y={[80, 100]} tagOuter="figure">
-      <img src={pot2} />
+        <Parallax className="fork" x={[80, -30]} y={[50, 10]} tagOuter="figure">
+      <img src={fork} />
     </Parallax>
   </Waw>
 )
