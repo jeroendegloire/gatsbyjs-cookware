@@ -47,7 +47,7 @@ export default () => (
     <Office className="city-temp-wrep">
       <div className="city-temp-wrep">
         <div className="city-temp-inner">
-          <div className="temp-header-bake temp dark-perot">
+          <div className="temp-header-bake temp">
             <div className="container">
               <div className="temp-header-inner">
                 <div className="row ">
@@ -65,15 +65,33 @@ export default () => (
             <div className="container">
               <div className="temp-content-inner pb100">
                 <div className="row ">
-                  <div className="col-md-12">
+                  <div className="col-md-4">
                     <div className="office-address-bake pt50">
                       <div className="office-icon pt60">
                         <img src={officesLegend} alt="" />
                         <span>Sales office</span>
                       </div>
+
+                      <h3>Who to contact?</h3>
+
+                      <ul className="contact-list">
+                        <li>JACOB MAURER <span className="function">PRESIDENT</span></li>
+                        <li>DON HILDEBRAND <span className="function">CFO</span></li>
+                        <li>TABITHA LUCKETT <span className="function">VICE PRESIDENT SALES</span></li>
+                        <li>KRYSTRA PUZEK <span className="function">HR</span></li>
+                      </ul>
                     </div>
-                    <div className="row">
-                      <div className="col-md-6 office-adderess">
+                    </div>
+                      <div className="col-md-4 office-adderess">
+                      <Iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.118698552834!2d-73.86488618458486!3d41.04453327929718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2eb22de4964a9%3A0x51ce794de04add2e!2s94%20N%20Broadway%2C%20Irvington%2C%20NY%2010533%2C%20USA!5e0!3m2!1sen!2sbe!4v1568621883533!5m2!1sen!2sbe"
+                          width="100%"
+                          height="195"
+                          frameborder="0"
+                          style="border:0;"
+                          allowfullscreen=""
+                        />
+                        <h5>The Cookware Company (USA), LLC</h5>
                         <p>
                           94 North Broadway <br />
                           Irvington, New York 10533 <br />
@@ -86,20 +104,30 @@ export default () => (
                           SWIFT: CHASUS33
                         </p>
                       </div>
-                      <div className="col-md-6">
-                        <Iframe
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.118698552834!2d-73.86488618458486!3d41.04453327929718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2eb22de4964a9%3A0x51ce794de04add2e!2s94%20N%20Broadway%2C%20Irvington%2C%20NY%2010533%2C%20USA!5e0!3m2!1sen!2sbe!4v1568621883533!5m2!1sen!2sbe"
+                      <div className="col-md-4 office-adderess">
+                      <Iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6696484208605!2d-73.98662108424968!3d40.74729407932817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a837f845b5%3A0x7ec56d610e82a6b0!2s12%20E%2033rd%20St%2C%20New%20York%2C%20NY%2010016%2C%20Verenigde%20Staten!5e0!3m2!1snl!2sbe!4v1571831673316!5m2!1snl!2sbe"
                           width="100%"
-                          height="300"
+                          height="195"
                           frameborder="0"
                           style="border:0;"
                           allowfullscreen=""
                         />
+                        <h5>GreenPan New York office</h5>
+
+                        <p>
+                        12 E 33rd St, 6th Floor<br/>
+New York, NY 10016<br/>
+United States of America
+                        </p>
                       </div>
                     </div>
                   </div>
-
-                  <Link
+                </div>
+              </div>
+            </div>
+          </div>
+          <Link
                     className="button-back"
                     to="/"
                     state={{
@@ -108,12 +136,6 @@ export default () => (
                   >
                     <img src={backIcon} className="back-icon" alt="" />
                   </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </Office>
   </Layout>
 )

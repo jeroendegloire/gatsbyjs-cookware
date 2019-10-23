@@ -43,7 +43,7 @@ const Offices = styled.section`
 `
 
 export default () => (
-  <Offices className="waw-offices-bake">
+  <Offices className="waw-offices-bake" id="Of">
     <Fade>
       <div>
         <div className="container">
@@ -77,7 +77,7 @@ export default () => (
                           </li>
                           <li>
                           <Link to="netherlands" asModal>
-                            <button className="dark-perot city-2 no-letter-spacing ">
+                            <button className="dark-perot city-2">
                               Visit<br/>
                               Netherlands<br/>
                               Office

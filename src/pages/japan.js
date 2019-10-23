@@ -47,7 +47,7 @@ export default () => (
     <Office className="city-temp-wrep">
       <div className="city-temp-wrep">
         <div className="city-temp-inner">
-          <div className="temp-header-bake temp dark-perot">
+          <div className="temp-header-bake temp">
             <div className="container">
               <div className="temp-header-inner">
                 <div className="row ">
@@ -65,33 +65,46 @@ export default () => (
             <div className="container">
               <div className="temp-content-inner pb100">
                 <div className="row ">
-                  <div className="col-md-12">
+                  <div className="col-md-4">
                     <div className="office-address-bake pt50">
                       <div className="office-icon pt60">
                         <img src={officesLegend} alt="" />
                         <span>Sales office</span>
                       </div>
+
+                      <h3>Who to contact?</h3>
+
+                      <ul className="contact-list">
+                        <li>DIETER NAESSENS <span className="function">PRESIDENT</span></li>
+                        <li>MASAMARU TAKAO <span className="function">MANAGING DIRECTOR</span></li>
+                      </ul>
                     </div>
-                    <div className="row">
-                      <div className="col-md-6 office-adderess">
-                        <p>
-                          Gaia Ebisu Building<br/>5/F<br/>2-20-2<br/>Ebisu-minami<br/>Shibuya-ku<br/>Tokyo<br/>150-0022<br/>Japan<br/>
-Phone: (81) 3 6452 2952
-                        </p>
-                      </div>
-                      <div className="col-md-6">
-                        <Iframe
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.94117512624!2d0.22451095147210073!3d52.38767325368057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d812ea3e147117%3A0x1c96c61154780038!2sGrovemere%20Property!5e1!3m2!1sen!2sbe!4v1568620703099!5m2!1sen!2sbe"
+                    </div>
+                      <div className="col-md-8 office-adderess">
+                      <Iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9735.515071336025!2d0.22670500000001026!3d52.38767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c96c61154780038!2sGrovemere%20Property!5e0!3m2!1sen!2sbe!4v1571832027399!5m2!1sen!2sbe"
                           width="100%"
-                          height="300"
+                          height="195"
                           frameborder="0"
                           style="border:0;"
                           allowfullscreen=""
                         />
+                        <p><br/>
+                          Gaia Ebisu Building, 5/F, 2-20-2<br/>Ebisu-minami, Shibuya-ku, Tokyo<br/>150-0022, Japan<br/>
+Phone: (81) 3 6452 2952
+                        </p>
+                      </div>
+                      <div className="col-md-6">
+                        
                       </div>
                     </div>
                   </div>
-                  <Link
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <Link
                     className="button-back"
                     to="/"
                     state={{
@@ -100,12 +113,6 @@ Phone: (81) 3 6452 2952
                   >
                     <img src={backIcon} className="back-icon" alt="" />
                   </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </Office>
   </Layout>
 )

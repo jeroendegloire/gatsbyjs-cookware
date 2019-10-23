@@ -225,6 +225,27 @@ article {
 	}
 }
 
+.contact-list {
+	li {
+		line-height: 20px;
+		margin-bottom: 15px;
+		position: relative;
+		color: #676260;
+		font-family: 'HelveticaNeueRoman';
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+
+	.function {
+		color: #676260;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 12px;
+		display: block;
+	}
+}
+
 .waw-offices-bake {
 	&:before {
 		content: '';
@@ -375,6 +396,15 @@ article {
 .temp-content-inner {
 	padding-top: 100px;
 	padding-bottom: 100px;
+
+	h3 {
+		color: #7C8C42;
+		font-size: 17px;
+		font-family: Montserrat;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 1rem;
+	}
 }
 
 .temp-header-bake:before {
@@ -425,6 +455,7 @@ article {
 	color: #676260;
 	font-size: 14px;
 	margin-bottom: 5px;
+	margin-top: 1rem;
 }
 
 .office-adderess p {
@@ -459,13 +490,13 @@ article {
 
 .city-temp-wrep {
 	position: relative;
+	overflow-x: hidden;
 }
 
 .button-back {
 	position: absolute;
-	bottom: 0;
-	right: 2rem;
-	margin-bottom: 2rem;
+	bottom: 3rem;
+	right: 3rem;
 }
 
 .row.office-adderess > div {

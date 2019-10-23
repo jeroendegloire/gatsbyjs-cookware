@@ -46,7 +46,7 @@ export default () => (
   <Layout>
     <Office className="city-temp-wrep">
       <div className="city-temp-inner">
-        <div className="temp-header-bake temp dark-perot">
+        <div className="temp-header-bake temp">
           <div className="container">
             <div className="temp-header-inner">
               <div className="row ">
@@ -67,17 +67,34 @@ export default () => (
         <div className="temp-content-main">
           <div className="container">
             <div className="temp-content-inner pb100">
-              <div className="row ">
-                <div className="col-md-12">
-                  <div className="office-address-bake pt50">
-                    <div className="office-icon pt60">
+              <div className="row pt100">
+                <div className="col-md-4">
+                  <div className="office-address-bake">
+                    <div className="office-icon">
                       <img src={officesLegend} alt="" />
                       <span>Sales office</span>
                     </div>
+
+                    <h3>Who to contact?</h3>
+
+                      <ul className="contact-list">
+                        <li>SOPHIE WETSELS <span className="function">PRESIDENT</span></li>
+                        <li>KATHY MERCKX <span className="function">CFO</span></li>
+                        <li>RICHARD FRERIKS <span className="function">DIRECTEUR BK</span></li>
+                        <li>ELIZA GABRIËL <span className="function">HR</span></li>
+                      </ul>
                   </div>
-                  <div className="row">
-                    <div className="col-md-3">
+                  </div>
+                    <div className="col-md-4">
                       <div className="office-adderess">
+                      <Iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.3005614815934!2d4.364698515788193!3d52.001400879719355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5947f3b835f%3A0x7289c317adc8f156!2sRotterdamseweg%20196%2C%202628%20AR%20Delft%2C%20Netherlands!5e0!3m2!1sen!2sbe!4v1568623349628!5m2!1sen!2sbe"
+                        width="100%"
+                        height="195"
+                        frameborder="0"
+                        style="border:0;"
+                        allowfullscreen=""
+                      />
                         <h5>BK Cookware BV </h5>
                         <p className="mb20">
                           Rotterdamseweg 196
@@ -97,8 +114,16 @@ export default () => (
                         </p>
                       </div>
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-4">
                       <div className="office-adderess">
+                      <Iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.300561481596!2d4.364698516068017!3d52.001400879719306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5947f3b835f%3A0x7289c317adc8f156!2sRotterdamseweg%20196%2C%202628%20AR%20Delft%2C%20Nederland!5e0!3m2!1snl!2sbe!4v1571830704790!5m2!1snl!2sbe"
+                        width="100%"
+                        height="195"
+                        frameborder="0"
+                        style="border:0;"
+                        allowfullscreen=""
+                      />
                         <h5>BV Koninklijke Van Kempen en Begeer </h5>
                         <p className="mb20">
                           Rotterdamseweg 196
@@ -119,20 +144,12 @@ export default () => (
                       </div>
                     </div>
 
-                    <div className="col-md-6">
-                      <Iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.3005614815934!2d4.364698515788193!3d52.001400879719355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5947f3b835f%3A0x7289c317adc8f156!2sRotterdamseweg%20196%2C%202628%20AR%20Delft%2C%20Netherlands!5e0!3m2!1sen!2sbe!4v1568623349628!5m2!1sen!2sbe"
-                        width="100%"
-                        height="300"
-                        frameborder="0"
-                        style="border:0;"
-                        allowfullscreen=""
-                      />
-                    </div>
                   </div>
-                </div>
-
-                <Link
+            </div>
+          </div>
+          </div>
+          </div>
+          <Link
                   className="button-back"
                   to="/"
                   state={{
@@ -141,11 +158,7 @@ export default () => (
                 >
                   <img src={backIcon} className="back-icon" alt="" />
                 </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              
     </Office>
   </Layout>
 )

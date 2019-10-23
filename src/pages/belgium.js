@@ -46,7 +46,7 @@ export default () => (
   <Layout>
     <Office className="city-temp-wrep" id="temp1">
       <div className="city-temp-inner">
-        <div className="temp-header-bake temp dark-perot">
+        <div className="temp-header-bake temp">
           <div className="container">
             <div className="temp-header-inner">
               <div className="row ">
@@ -64,18 +64,35 @@ export default () => (
           <div className="container">
             <div className="temp-content-inner pb100">
               <div className="row ">
-                <div className="col-md-12">
+                <div className="col-md-4">
                   <div className="office-address-bake pt50">
                     <div className="office-icon pt60">
                       <img src={officesLegend} alt="" />
                       <span>Sales office</span>
                     </div>
+
+                    <h3>Who to contact?</h3>
+
+                      <ul className="contact-list">
+                        <li>SOPHIE WETSELS <span className="function">PRESIDENT</span></li>
+                        <li>KATHY MERCKX <span className="function">CFO</span></li>
+                        <li>NADIA BOGAERT <span className="function">SALES MANAGER BELGIUM &amp; FRANCE</span></li>
+                        <li>WANNES FONTAINE <span className="function">SALES MANAGER EMEA</span></li>
+                        <li>SOFIE KNOCKAERT <br/>ELIZA GABRIËL <span className="function">HR</span></li>
+                      </ul>
                   </div>
-                  <div className="row">
-                    <div className="col-md-6 office-adderess">
+                  </div>
+                    <div className="col-md-8 office-adderess">
+                    <Iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.0457963047115!2d3.652422215753267!3d51.05224217956287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371efab35a105%3A0x98b1c48f802897c7!2sAntoon%20Catriestraat%2012%2C%209031%20Gent!5e0!3m2!1sen!2sbe!4v1568618880104!5m2!1sen!2sbe"
+                      width="100%"
+                      height="195"
+                      frameborder="0"
+                      style="border:0;"
+                      allowfullscreen=""
+                    />
                       <p>
-                        The Cookware Company BVBA
-                        <br />
+                        <h5>The Cookware Company BVBA</h5>
                         Antoon Catriestraat 12
                         <br />
                         9031 Drongen
@@ -91,21 +108,12 @@ export default () => (
                         GEBABBEB
                       </p>
                     </div>
-
-                    <div className="col-md-6">
-                    <Iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.0457963047115!2d3.652422215753267!3d51.05224217956287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371efab35a105%3A0x98b1c48f802897c7!2sAntoon%20Catriestraat%2012%2C%209031%20Gent!5e0!3m2!1sen!2sbe!4v1568618880104!5m2!1sen!2sbe"
-                      width="100%"
-                      height="300"
-                      frameborder="0"
-                      style="border:0;"
-                      allowfullscreen=""
-                    />
-                    </div>
-                  </div>
                 </div>
-
-                <Link
+              </div>
+            </div>
+          </div>
+        </div>
+        <Link
                   className="button-back"
                   to="/"
                   state={{
@@ -113,12 +121,7 @@ export default () => (
                   }}
                 >
                   <img src={backIcon} className="back-icon" alt="" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </Link>
     </Office>
   </Layout>
 )

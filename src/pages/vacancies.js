@@ -166,6 +166,7 @@ const Vacancies = styled.div`
 
   .dark-perot {
     background: #7c8c42;
+    color: white !important;
   }
 
   .button-back {
