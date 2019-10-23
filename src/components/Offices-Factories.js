@@ -238,33 +238,8 @@ export default class OfficesFactoriesComponent extends React.Component {
                             data-src="#temp1"
                           ></div>
                         </Link>
-                        <Link to="uk" asModal>
-                          <div
-                            className="map-markers__mark map-markers__mark--offices marker2"
-                            data-left="45%"
-                            data-top="23.5%"
-                            data-fancybox="temp2"
-                            data-src="#temp2"
-                          ></div>
-                        </Link>
-                        <Link to="belgium" asModal>
-                          <div
-                            className="map-markers__mark map-markers__mark--offices marker3"
-                            data-left="47.5%"
-                            data-top="27%"
-                            data-fancybox="temp3"
-                            data-src="#temp3"
-                          ></div>
-                        </Link>
-                        <Link to="netherlands" asModal>
-                          <div
-                            className="map-markers__mark map-markers__mark--offices marker4"
-                            data-left="50%"
-                            data-top="25%"
-                            data-fancybox="temp4"
-                            data-src="#temp4"
-                          ></div>
-                        </Link>
+                        
+
                         <Link to="germany" asModal>
                         <div
                           className="map-markers__mark map-markers__mark--factories marker5"
@@ -329,35 +304,11 @@ export default class OfficesFactoriesComponent extends React.Component {
                     <div className="col-md-11 col-lg-8 col-sm-12 ">
                       <div className="city-name-inner">
                         <div className="city-name">
-                          <Link to="belgium" asModal>
-                            <button className="dark-perot city-1">
-                              Belgium
-                            </button>
-                          </Link>
+                          
 
-                          <Link to="netherlands" asModal>
-                            <button className="dark-perot city-2 no-letter-spacing ">
-                              Netherlands
-                            </button>
-                          </Link>
+                          
 
-                          <Link to="uk" asModal>
-                            <button className="dark-perot city-3">Uk</button>
-                          </Link>
 
-                          <Link to="us" asModal>
-                            <button className="dark-perot city-4">Us</button>
-                          </Link>
-
-                          <Link to="japan" asModal>
-                            <button className="dark-perot city-5">Japan</button>
-                          </Link>
-
-                          <Link to="hongkong" asModal>
-                            <button className="dark-perot city-6">
-                              Hong Kong
-                            </button>
-                          </Link>
 
                           <Link to="china" asModal>
                             <button className="light-gray city-7">China</button>

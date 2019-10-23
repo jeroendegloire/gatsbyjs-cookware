@@ -74,24 +74,9 @@ export default () => (
                     </div>
                     <div className="row">
                       <div className="col-md-6 office-adderess">
-                        <h5>Anotech International UK Ltd.</h5>
                         <p>
-                          Unit 1H
-                          <br />
-                          Grovemere House
-                          <br />
-                          Lancaster Way Business Park
-                          <br />
-                          Ely, CB6 3NW
-                          <br />
-                          VAT: 980702221
-                          <br />
-                          HSBC GBP <br />
-                          IBAN: GB64 MIDL 4004 0961 861018 61861018
-                          <br />
-                          Routing N° 400409
-                          <br />
-                          SWIFT: MIDLGB22
+                          Gaia Ebisu Building<br/>5/F<br/>2-20-2<br/>Ebisu-minami<br/>Shibuya-ku<br/>Tokyo<br/>150-0022<br/>Japan<br/>
+Phone: (81) 3 6452 2952
                         </p>
                       </div>
                       <div className="col-md-6">

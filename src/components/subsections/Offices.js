@@ -1,10 +1,49 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
+import { Link } from 'gatsby-plugin-modal-routing'
+import styled from 'styled-components'
 
 import offices from '../../images/offices.svg'
 
+import flagBelgium from '../../images/flag--belgium.svg'
+import flagHongKong from '../../images/flag--hong-kong.svg'
+import flagJapan from '../../images/flag--japan.svg'
+import flagNetherlands from '../../images/flag--netherlands.svg'
+import flagUk from '../../images/flag--uk.svg'
+import flagUs from '../../images/flag--us.svg'
+import map from '../../images/world-map-optimized.svg'
+
+const Offices = styled.section`
+.city-1:before {
+  background-image: url(${flagBelgium});
+}
+.city-2:before {
+  background-image: url(${flagNetherlands});
+}
+.city-3:before {
+  background-image: url(${flagUk});
+}
+.city-4:before {
+  background-image: url(${flagUs});
+}
+.city-5:before {
+  background-image: url(${flagJapan});
+}
+.city-6:before {
+  background-image: url(${flagHongKong});
+}
+
+.waw-sec-title {
+  background-image: url(${map});
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+`
+
 export default () => (
-  <div className="waw-offices-bake">
+  <Offices className="waw-offices-bake">
     <Fade>
       <div>
         <div className="container">
@@ -26,34 +65,29 @@ export default () => (
                     <div className="w-c-box-main">
                       <div className="w-c-box">
                         <h3>EMEA</h3>
-                        <ul>
+                        <ul className="city-name">
                           <li>
-                            SOPHIE WETSELS
-                            <span className="function">PRESIDENT</span>
+                          <Link to="belgium" asModal>
+                            <button className="dark-perot city-1">
+                              Visit<br/>
+                              Belgium<br/>
+                              Office
+                            </button>
+                          </Link>
                           </li>
                           <li>
-                            KATHY MERCKX
-                            <span className="function">CFO</span>
+                          <Link to="netherlands" asModal>
+                            <button className="dark-perot city-2 no-letter-spacing ">
+                              Visit<br/>
+                              Netherlands<br/>
+                              Office
+                            </button>
+                          </Link>
                           </li>
                           <li>
-                            RICHARD FRERIKS
-                            <span className="function">DIRECTOR BK</span>
-                          </li>
-                          <li>
-                            NADIA BOGAERT
-                            <span className="function">
-                              SALES MANAGER BELGIUM &amp; FRANCE
-                            </span>
-                          </li>
-                          <li>
-                            WANNES FONTAINE
-                            <span className="function">SALES MANAGER EMEA</span>
-                          </li>
-                          <li className="mb-0">SOFIE KNOCKAERT</li>
-                          <li>
-                            ELIZA GABRIËL
-                            <br />
-                            <span className="function">HR</span>
+                          <Link to="uk" asModal>
+                            <button className="dark-perot city-3">Visit<br/> Uk<br/> Office</button>
+                          </Link>
                           </li>
                         </ul>
                       </div>
@@ -63,24 +97,11 @@ export default () => (
                     <div className="w-c-box-main">
                       <div className="w-c-box">
                         <h3>UNITED STATES</h3>
-                        <ul>
+                        <ul className="city-name">
                           <li>
-                            JACOB MAURER
-                            <span className="function">PRESIDENT</span>
-                          </li>
-                          <li>
-                            DON HILDEBRAND
-                            <span className="function">CFO</span>
-                          </li>
-                          <li>
-                            TABITHA LUCKETT
-                            <span className="function">
-                              VICE PRESIDENT SALES
-                            </span>
-                          </li>
-                          <li>
-                            SERENA SINGH
-                            <span className="function">HR</span>
+                            <Link to="us" asModal>
+                              <button className="dark-perot city-4">Visit<br/> Us<br/> Office</button>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -90,28 +111,18 @@ export default () => (
                     <div className="w-c-box-main">
                       <div className="w-c-box">
                         <h3>ASIA</h3>
-                        <ul>
+                        <ul className="city-name">
                           <li>
-                            DIETER NAESSENS
-                            <span className="function">PRESIDENT</span>
+                            <Link to="hongkong" asModal>
+                              <button className="dark-perot city-6">
+                                Visit<br/> Hong Kong<br/> Office
+                              </button>
+                            </Link>
                           </li>
                           <li>
-                            JESSICA HUANG
-                            <span className="function">CFO</span>
-                          </li>
-                          <li>
-                            MASAMARU TAKAO
-                            <span className="function">MANAGING DIRECTOR</span>
-                          </li>
-                          <li>
-                            LISE VAN DEN BERGHE
-                            <span className="function">
-                              SALES &amp; MARKETING MANAGER
-                            </span>
-                          </li>
-                          <li>
-                            SINEA LAI
-                            <span className="function">HR</span>
+                            <Link to="japan" asModal>
+                              <button className="dark-perot city-5">Visit<br/> Japan<br/> Office</button>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -124,5 +135,5 @@ export default () => (
         </div>
       </div>
     </Fade>
-  </div>
+  </Offices>
 )

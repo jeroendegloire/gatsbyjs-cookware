@@ -1,10 +1,37 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
+import { Link } from 'gatsby-plugin-modal-routing'
+import styled from 'styled-components'
 
 import factories from '../../images/factories.svg'
 
+import flagChina from '../../images/flag--china.svg'
+import flagGermany from '../../images/flag--germany.svg'
+import flagSouthKorea from '../../images/flag--south-korea.svg'
+import map from '../../images/world-map-optimized.svg'
+
+const Factories = styled.section`
+.city-7:before {
+  background-image: url(${flagChina});
+}
+.city-8:before {
+  background-image: url(${flagSouthKorea});
+}
+.city-9:before {
+  background-image: url(${flagGermany});
+}
+
+.waw-sec-title {
+  background-image: url(${map});
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
+}
+
+`
+
 export default () => (
-    <div className="waw-factories-bake">
+    <Factories className="waw-factories-bake">
       <Fade>
         <div>
       <div className="container">
@@ -26,12 +53,11 @@ export default () => (
                   <div className="w-c-box-main">
                     <div className="w-c-box">
                       <h3>ANOTECH JIANGMEN</h3>
-                      <ul>
+                      <ul className="city-name"s>
                         <li>
-                          GOLDEN LEE<span className="function">PRESIDENT</span>
-                        </li>
-                        <li>
-                          JENNY HUANG<span className="function">CFO</span>
+                          <Link to="china" asModal>
+                              <button className="light-gray city-7">Visit <br/>China<br/> Factory</button>
+                            </Link>
                         </li>
                       </ul>
                     </div>
@@ -41,11 +67,15 @@ export default () => (
                   <div className="w-c-box-main">
                     <div className="w-c-box">
                       <h3>THERMOLON KOREA</h3>
-                      <ul>
+                      <ul className="city-name">
                         <li>
-                          C.K. PARK
-                          <br />
-                          <span className="function">PRESIDENT</span>
+                        <Link to="south-korea" asModal>
+                            <button className="light-gray city-8 no-letter-spacing ">
+                              Visit <br/>
+                              South Korea<br/>
+                              Factory
+                            </button>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -55,14 +85,15 @@ export default () => (
                   <div className="w-c-box-main">
                     <div className="w-c-box">
                       <h3>MERTEN &amp; STORCK</h3>
-                      <ul>
+                      <ul className="city-name">
                         <li>
-                          JENS JUNGMANN
-                          <span className="function">PRESIDENT</span>
-                        </li>
-                        <li>
-                          KATHY MERCKX
-                          <span className="function">CFO</span>
+                        <Link to="germany" asModal>
+                            <button className="light-gray city-9 no-letter-spacing ">
+                              Visit<br/>
+                              Germany<br/>
+                              Factory
+                            </button>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -75,5 +106,5 @@ export default () => (
       </div>
       </div>
       </Fade>
-    </div>
+    </Factories>
 )

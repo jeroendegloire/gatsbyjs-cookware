@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import Hero from '../components/Hero'
 import Kf from '../components/Kf'
 import Waw from '../components/Waw'
+import History from '../components/History'
 import Contact from '../components/Contact'
 import Brands from '../components/Brands'
 import OfficesFactories from '../components/Offices-Factories'
@@ -23,10 +24,11 @@ class Main extends React.Component {
       <main>
         <article>
           <Hero />
-          <Kf />
           <Waw />
+          <Kf />
+          <History/>
           <Contact />
-          <OfficesFactories />
+         {/*<OfficesFactories />*/}
           <Brands />
 
           {/* <ModalRoute path="/modal-test" parentPath="/">

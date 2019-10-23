@@ -46,7 +46,7 @@ const Waw = styled.section`
 
   .waw-inner {
     background: #d6d6cd;
-    padding: 50px 0 220px;
+    padding: 50px 0 150px;
     position: relative;
 
     position: relative;
@@ -250,7 +250,7 @@ export default () => (
   <Waw className="page-section waw-wrep" id="waw">
     <StaticQuery
       query={graphql`
-        query WawOneQuery {
+        query HistoryQuery {
           imageOne: file(relativePath: { eq: "greenpan-people.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 381, maxHeight: 172) {
@@ -283,115 +283,85 @@ export default () => (
       `}
       render={data => (
         <div className="waw-inner">
-          <div className="container">
-            <Fade className="waw-bake">
-              <div className="row justify-content-center">
-                <div className="col-lg-9">
-                  <div className="waw-title">
-                    <h2>Who we are?</h2>
-                  </div>
-                  <div className="row waw-content-wrep">
-                    <div className="col-lg-6 waw-content-left">
-                      <div className="waw-content-inner">
-                        <div className="waw-content">
-                          <p>
-                            The Cookware Company is a global company with a high
-                            expertise in innovative cookware. Our organization
-                            is vertically integrated, allowing us to manage both
-                            the production and distribution of our products. We
-                            have sales offices in Europe, the United States and
-                            Asia as well as state-of-the-art production
-                            facilities in Korea, China and Europe. We have high
-                            quality standards (eg. ISO-certificates) and work
-                            hard to reduce our environmental impact.
-                          </p>
-                          <Img fluid={data.imageOne.childImageSharp.fluid} />
-                          <div className="cookware-box">
-                            <div className="row no-gutters">
-                              <div className="col-md-6 col-sm-6 col-6">
-                                <Img
-                                  fluid={data.imageTwo.childImageSharp.fluid}
-                                />
-                              </div>
-                              <div className="col--6 col-sm-6 col-6">
-                                <div className="cw-box-content cm-before">
-                                  <h3>
-                                    Pioneer
-                                    <br />
-                                    in healthy
-                                    <br />
-                                    ceramic
-                                    <br />
-                                    non-stick
-                                  </h3>
+          <div className="tm-wrep">
+            <div className="container">
+              <Fade className="timeline-wrep">
+                <div className="timeline-bake">
+                  <div className="row justify-content-center">
+                    <div className="2 col-lg-9">
+                      <h2 className="timeline-title">HISTORY OF THE COMPANY</h2>
+                      <div className="timeline-content-wrep">
+                        <div className="timeline-content-inner">
+                          <ul className="timeline-content">
+                            <li>
+                              <div className="tc-item">
+                                <h5>2005</h5>
+                                <div>
+                                  AQUISITION
+                                  <br />
+                                  ANOTECH MANUFACTURING
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-6 waw-content-right">
-                      <div className="waw-content">
-                        <div className="waw-content-inner">
-                          <h3>
-                            Vertically
-                            <br />
-                            integrated
-                            <br />
-                            company with
-                            <br />
-                            worldwide
-                            <br />
-                            presence
-                          </h3>
-                          <div className="mt30 mb20"></div>
-                          <p className="mt40">
-                            The Cookware Company has always been a pioneer in
-                            healthy ceramic non-stick cookware. Over the years
-                            we have extended our scope in order to offer smart
-                            cookware solutions for everyone. Innovation,
-                            flexibility, creativity and social responsibility
-                            are our main focus. However, our most important
-                            asset are our people. They’re the heart of our
-                            company.{' '}
-                          </p>
-                          <div className="cookware-box">
-                            <div className="row no-gutters">
-                              <div className="col-md-6 col-sm-6 col-6">
-                                <div className="cw-box-content cm-after">
-                                  <h3>
-                                    High expertise
-                                    <br />
-                                    in production
-                                    <br />
-                                    &amp; distribution
-                                    <br />
-                                    of innovative cookware
-                                  </h3>
+                            </li>
+                            <li>
+                              <div className="tc-item">
+                                <h5>20..</h5>
+                                <div>
+                                  AQUISITION
+                                  <br />
+                                  THERMOLON<sup>TM</sup>
                                 </div>
                               </div>
-                              <div className="col-md-6 col-sm-6 col-6">
-                                <Img
-                                  fluid={data.imageThree.childImageSharp.fluid}
-                                />
+                            </li>
+                            <li>
+                              <div className="tc-item">
+                                <h5>2007</h5>
+                                <div>New brand greenpan</div>
                               </div>
-                            </div>
-                            <div className="row no-gutters">
-                              <div className="col-md-6 col-sm-6 col-6">
-                                <Img
-                                  fluid={data.imageFour.childImageSharp.fluid}
-                                />
+                            </li>
+                            <li>
+                              <div className="tc-item">
+                                <h5>2011</h5>
+                                <div>New brands GREENCHEF &amp; GREENLIFE</div>
                               </div>
-                            </div>
-                          </div>
+                            </li>
+                            <li>
+                              <div className="tc-item">
+                                <h5>2013</h5>
+                                <div>Loyalty department</div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="tc-item">
+                                <h5>2016</h5>
+                                <div>New brand blue diamond</div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="tc-item">
+                                <h5>2018</h5>
+                                <div>
+                                  aquisition BK, Keltum, Gero, Van Kempen en
+                                  begeer
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="tc-item">
+                                <h5>2018</h5>
+                                <div>
+                                  aquisition Merten &amp; Storck, Kochstar
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </Fade>
+              </Fade>
+            </div>
           </div>
         </div>
       )}
@@ -399,10 +369,6 @@ export default () => (
 
     <Parallax className="pot-2" x={[-80, -20]} y={[80, 100]} tagOuter="figure">
       <img src={pot2} />
-    </Parallax>
-
-    <Parallax className="fork" x={[80, -30]} y={[50, 10]} tagOuter="figure">
-      <img src={fork} />
     </Parallax>
   </Waw>
 )
