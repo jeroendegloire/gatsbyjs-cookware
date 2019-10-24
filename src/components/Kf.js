@@ -92,7 +92,7 @@ const Kf = props => (
       <div className="container">
         <div className="kf-title-bake">
           <div className="kf-title">
-            <h2>Key figures</h2>
+            <h2>The Company at Glance</h2>
           </div>
           <div className="row justify-content-center">
             <div className="col-lg-9">
@@ -168,7 +168,7 @@ const Kf = props => (
                       <img src={kf_6} alt="TRADEMARKS" />
                       <span className="more-then">MORE THAN</span>
                       <h3>
-                        <CountUp duration={3} end={2000} />
+                        <CountUp duration={3} end={500} />
                       </h3>
                       <span>TRADEMARKS</span>
                     </div>

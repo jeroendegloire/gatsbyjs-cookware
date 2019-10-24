@@ -100,7 +100,7 @@ export default () => (
                         <ul className="city-name">
                           <li>
                             <Link to="us" asModal>
-                              <button className="dark-perot city-4">Visit<br/> Us<br/> Office</button>
+                              <button className="dark-perot city-4">Visit<br/> Us<br/> Offices</button>
                             </Link>
                           </li>
                         </ul>

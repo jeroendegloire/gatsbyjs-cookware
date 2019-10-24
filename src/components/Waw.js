@@ -288,7 +288,7 @@ export default () => (
               <div className="row justify-content-center">
                 <div className="col-lg-9">
                   <div className="waw-title">
-                    <h2>Who we are?</h2>
+                    <h2>Who are we?</h2>
                   </div>
                   <div className="row waw-content-wrep">
                     <div className="col-lg-6 waw-content-left">

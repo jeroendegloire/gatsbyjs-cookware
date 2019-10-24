@@ -34,14 +34,14 @@ class Navigation extends React.Component {
               Home
             </AnchorLink>
           </li>
-          <li className="nav-item">
+          <li className="nav-item hidden">
             <AnchorLink offset="63" href="#kf">
               Key figures
             </AnchorLink>
           </li>
-          <li className="nav-item hidden">
+          <li className="nav-item">
             <AnchorLink offset="63" href="#waw">
-              Who we are?
+              Who are we?
             </AnchorLink>
           </li>
           <li className="nav-item">

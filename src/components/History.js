@@ -365,7 +365,7 @@ GERO, VAN KEMPEN EN BEGEER
                             </li>
                             <li>
                               <div className="tc-item">
-                                <h5>2018</h5>
+                                <h5>2019</h5>
                                 <div>
                                   aquisition Merten &amp; Storck, Kochstar
                                 </div>
