@@ -43,7 +43,7 @@ const Offices = styled.section`
 `
 
 export default () => (
-  <Offices className="waw-offices-bake" id="Of">
+  <Offices className="waw-offices-bake" id="of">
     <Fade>
       <div>
         <div className="container">
