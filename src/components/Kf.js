@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import CountUp from 'react-countup'
 import { Parallax } from 'react-scroll-parallax'
 import Fade from 'react-reveal/Fade'
+import VisibilitySensor from 'react-visibility-sensor'
 
 import kf_1 from '../images/figures--turnover.svg'
 import kf_2 from '../images/figures--factories.svg'
@@ -17,11 +18,11 @@ import pot from '../images/pot.svg'
 const Kf_wrapper = styled.section`
   position: relative;
   padding: 60px 0px 200px;
-  
+
   sup {
     font-size: 21px;
   }
-  
+
   &:before {
     content: '';
     display: block;
@@ -70,7 +71,7 @@ const Kf_wrapper = styled.section`
     }
 
     > span:last-child {
-      color: #7C8C42;
+      color: #7c8c42;
       font-family: Montserrat;
       font-size: 16px;
       letter-spacing: 2px;
@@ -78,109 +79,192 @@ const Kf_wrapper = styled.section`
   }
 `
 
-const Kf = props => (
-  <Kf_wrapper className="page-section" id="kf">
-    <Parallax className="pan" x={[-80, -20]} y={[0, 60]} tagOuter="figure">
-      <img src={pan} />
-    </Parallax>
+class Kf extends React.Component {
+  state = {
+    didViewCountUp: false,
+  }
 
-    <Parallax className="pot" x={[120, 20]} y={[0, 60]} tagOuter="figure">
-      <img src={pot} />
-    </Parallax>
+  onVisibilityChange = isVisible => {
+    if (isVisible) {
+      this.setState({ didViewCountUp: true })
+    }
+  }
 
-    <Fade>
-      <div className="container">
-        <div className="kf-title-bake">
-          <div className="kf-title">
-            <h2>The Company at Glance</h2>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-9">
+  render() {
+    return (
+      <Kf_wrapper className="page-section" id="kf">
+        <Parallax className="pan" x={[-80, -20]} y={[0, 60]} tagOuter="figure">
+          <img src={pan} />
+        </Parallax>
+
+        <Parallax className="pot" x={[120, 20]} y={[0, 60]} tagOuter="figure">
+          <img src={pot} />
+        </Parallax>
+
+        <Fade>
+          <div className="container">
+            <div className="kf-title-bake">
+              <div className="kf-title">
+                <h2>The Company at Glance</h2>
+              </div>
               <div className="row justify-content-center">
-                <div className="col-md-4 col-6">
-                  <div className="kf-box-inner">
-                    <div className="kf-box">
-                      <img src={kf_1} alt="Turnover" />
-                      <span className="more-then">MORE THAN</span>
-                      <h3>
-                        $<CountUp duation={3} end={200} />m{' '}
-                      </h3>
-                      <span>TURNOVER 2018</span>
+                <div className="col-lg-9">
+                  <div className="row justify-content-center">
+                    <div className="col-md-4 col-6">
+                      <div className="kf-box-inner">
+                        <div className="kf-box">
+                          <img src={kf_1} alt="Turnover" />
+                          <span className="more-then">MORE THAN</span>
+                          <VisibilitySensor
+                            onChange={this.onVisibilityChange}
+                            offset={{
+                              top: 10,
+                            }}
+                            delayedCall
+                          >
+                            <h3>
+                              $
+                              <CountUp
+                                duration={3}
+                                end={this.state.didViewCountUp ? 200 : 0}
+                              />
+                              m{' '}
+                            </h3>
+                          </VisibilitySensor>
+
+                          <span>TURNOVER 2018</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="col-md-4 col-6">
-                  <div className="kf-box-inner">
-                    <div className="kf-box">
-                      <img src={kf_2} alt="Factories" />
-                      <span className="more-then">MORE THAN</span>
-                      <h3>
-                        <CountUp duration={3} end={200000} separator="." /> m
-                        <sup>2</sup>
-                      </h3>
-                      <span>IN 3 FACTORIES</span>
+                    <div className="col-md-4 col-6">
+                      <div className="kf-box-inner">
+                        <div className="kf-box">
+                          <img src={kf_2} alt="Factories" />
+                          <span className="more-then">MORE THAN</span>
+                          <VisibilitySensor
+                            onChange={this.onVisibilityChange}
+                            offset={{
+                              top: 10,
+                            }}
+                            delayedCall
+                          >
+                            <h3>
+                              <CountUp
+                                duration={3}
+                                start={100000}
+                                end={this.state.didViewCountUp ? 200000 : 0}
+                                separator="."
+                              />{' '}
+                              m<sup>2</sup>
+                            </h3>
+                          </VisibilitySensor>
+
+                          <span>IN 3 FACTORIES</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="col-md-4 col-6">
-                  <div className="kf-box-inner">
-                    <div className="kf-box">
-                      <img src={kf_3} alt="Capacity factories" />
-                      <span className="more-then">MORE THAN</span>
-                      <h3>
-                        <CountUp
-                          duration={3}
-                          end={20}
-                        />
-                        m/year
-                      </h3>
-                      <span>CAPACITY FACTORIES</span>
+                    <div className="col-md-4 col-6">
+                      <div className="kf-box-inner">
+                        <div className="kf-box">
+                          <img src={kf_3} alt="Capacity factories" />
+                          <span className="more-then">MORE THAN</span>
+                          <VisibilitySensor
+                            onChange={this.onVisibilityChange}
+                            offset={{
+                              top: 10,
+                            }}
+                            delayedCall
+                          >
+                            <h3>
+                              <CountUp
+                                duration={3}
+                                end={this.state.didViewCountUp ? 20 : 0}
+                              />
+                              m/year
+                            </h3>
+                          </VisibilitySensor>
+                          <span>CAPACITY FACTORIES</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="col-md-4 col-6">
-                  <div className="kf-box-inner">
-                    <div className="kf-box">
-                      <img src={kf_4} alt="Brands" />
-                      <span className="more-then">MORE THAN</span>
-                      <h3>
-                        <CountUp duration={3} end={10} />
-                      </h3>
-                      <span>BRANDS</span>
+                    <div className="col-md-4 col-6">
+                      <div className="kf-box-inner">
+                        <div className="kf-box">
+                          <img src={kf_4} alt="Brands" />
+                          <span className="more-then">MORE THAN</span>
+                          <VisibilitySensor
+                            onChange={this.onVisibilityChange}
+                            offset={{
+                              top: 10,
+                            }}
+                            delayedCall
+                          >
+                            <h3>
+                              <CountUp
+                                duration={3}
+                                end={this.state.didViewCountUp ? 10 : 0}
+                              />
+                            </h3>
+                          </VisibilitySensor>
+                          <span>BRANDS</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="col-md-4 col-6">
-                  <div className="kf-box-inner">
-                    <div className="kf-box">
-                      <img src={kf_5} alt="Employees" />
-                      <span className="more-then">MORE THAN</span>
-                      <h3>
-                        <CountUp duration={3} end={2000} />
-                      </h3>
-                      <span>EMPLOYEES</span>
+                    <div className="col-md-4 col-6">
+                      <div className="kf-box-inner">
+                        <div className="kf-box">
+                          <img src={kf_5} alt="Employees" />
+                          <span className="more-then">MORE THAN</span>
+                          <VisibilitySensor
+                            onChange={this.onVisibilityChange}
+                            offset={{
+                              top: 10,
+                            }}
+                            delayedCall
+                          >
+                            <h3>
+                              <CountUp
+                                duration={3}
+                                end={this.state.didViewCountUp ? 2000 : 0}
+                              />
+                            </h3>
+                          </VisibilitySensor>
+                          <span>EMPLOYEES</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="col-md-4 col-6">
-                  <div className="kf-box-inner">
-                    <div className="kf-box">
-                      <img src={kf_6} alt="TRADEMARKS" />
-                      <span className="more-then">MORE THAN</span>
-                      <h3>
-                        <CountUp duration={3} end={500} />
-                      </h3>
-                      <span>TRADEMARKS</span>
+                    <div className="col-md-4 col-6">
+                      <div className="kf-box-inner">
+                        <div className="kf-box">
+                          <img src={kf_6} alt="TRADEMARKS" />
+                          <span className="more-then">MORE THAN</span>
+                          <VisibilitySensor
+                            onChange={this.onVisibilityChange}
+                            offset={{
+                              top: 10,
+                            }}
+                            delayedCall
+                          >
+                            <h3>
+                              <CountUp
+                                duration={3}
+                                end={this.state.didViewCountUp ? 500 : 0}
+                              />
+                            </h3>
+                          </VisibilitySensor>
+                          <span>TRADEMARKS</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </Fade>
-  </Kf_wrapper>
-)
+        </Fade>
+      </Kf_wrapper>
+    )
+  }
+}
 
 export default Kf
