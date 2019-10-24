@@ -48,6 +48,10 @@ a {
 }
 
 .pan {
+	.parallax-inner {
+		transform: translate3d(-78.7411%, 1.25887%, 0px);
+	}
+
 	position: relative;
 	z-index: 1;
 	width: 300px;
@@ -64,6 +68,10 @@ a {
 	z-index: 1;
 	width: 500px;
 
+	.parallax-inner {
+		transform: translate3d(117.902%, 1.25887%, 0px);
+	}
+
 	img {
 		position: absolute;
 		margin-top: -90%;
@@ -74,6 +82,10 @@ a {
 	position: relative;
 	z-index: 1;
 	width: 350px;
+
+	.parallax-inner {
+		transform: translate3d(-79.7892%, 80.0703%, 0px);
+	}
 
 	img {
 		position: absolute;
@@ -87,6 +99,10 @@ a {
 	z-index: 2;
 	width: 250px;
 
+	.parallax-inner {
+		transform: translate3d(79.4108%, 49.7858%, 0px);
+	}
+
 	img {
 		position: absolute;
 		margin-top: -30%;
@@ -97,6 +113,10 @@ a {
 	position: relative;
 	z-index: 1;
 	width: 200px;
+
+	.parallax-inner {
+		transform: translate3d(-49.693%, 0%, 0px);
+	}
 
 	img {
 		position: absolute;
@@ -110,6 +130,10 @@ a {
 	z-index: 2;
 	width: 500px;
 
+	.parallax-inner {
+		transform: translate3d(49.2904%, 0%, 0px);
+	}
+
 	img {
 		position: absolute;
 		margin-top: -80%;
@@ -121,6 +145,10 @@ a {
 	position: relative;
 	z-index: 2;
 	width: 500px;
+
+	.parallax-inner {
+		transform: translate3d(-38.2635%, 0%, 0px);
+	}
 
 	img {
 		position: absolute;
@@ -134,6 +162,10 @@ a {
 	position: relative;
 	z-index: 2;
 	width: 600px;
+
+	.parallax-inner {
+		transform: translate3d(79.3184%, 0%, 0px);
+	}
 
 	img {
 		position: absolute;
