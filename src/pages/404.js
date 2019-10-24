@@ -127,6 +127,7 @@ const NotFound = styled.div`
     display: block;
     margin-top: 4rem;
     margin-bottom: 0;
+    right: 0;
 
     img {
       width: 80px;
