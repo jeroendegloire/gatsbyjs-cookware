@@ -239,6 +239,16 @@ article {
 		font-family: 'Montserrat';
 		font-weight: 700;
 		color: #fff;
+
+		&:after {
+			content: '';
+			height: 5px;
+			width: 60px;
+			background: white;
+			display: block;
+			margin: 0 auto;
+			margin-top: 1rem;
+		}
 	}
 
 	ul {
