@@ -55,7 +55,10 @@ export default () => (
                   <div className="col-md-6 col-lg-4 col-sm-6 col-12">
                     <div className="w-c-box-main">
                       <div className="w-c-box">
-                        <h3>ANOTECH JIANGMEN</h3>
+                        <h3>
+                          <br />
+                          ANOTECH JIANGMEN
+                        </h3>
                         <ul className="city-name" s>
                           <li>
                             <Link to="china" asModal>
@@ -74,7 +77,10 @@ export default () => (
                   <div className="col-md-6 col-lg-4 col-sm-6 col-12">
                     <div className="w-c-box-main">
                       <div className="w-c-box">
-                        <h3>THERMOLON KOREA</h3>
+                        <h3>
+                          <br />
+                          THERMOLON KOREA
+                        </h3>
                         <ul className="city-name">
                           <li>
                             <Link to="south-korea" asModal>
