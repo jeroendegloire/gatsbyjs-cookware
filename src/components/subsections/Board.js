@@ -68,7 +68,7 @@ export default () => (
                           CTO
                         </h3>
                         <ul>
-                          <li>CHRIS PHILIPS</li>
+                          <li>CHRIS PHILLIPS</li>
                         </ul>
                       </div>
                     </div>

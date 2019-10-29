@@ -105,7 +105,7 @@ class Kf extends React.Component {
           <div className="container">
             <div className="kf-title-bake">
               <div className="kf-title">
-                <h2>The Company at Glance</h2>
+                <h2>The company at a Glance</h2>
               </div>
               <div className="row justify-content-center">
                 <div className="col-lg-9">

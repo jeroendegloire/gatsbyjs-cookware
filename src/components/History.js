@@ -308,18 +308,22 @@ export default () => (
                                 <div>
                                   AQUISITION
                                   <br />
-                                  ANOTECH 
-                                  <br />MANUFACTURING
+                                  ANOTECH
+                                  <br />
+                                  MANUFACTURING
                                 </div>
                               </div>
                             </li>
                             <li>
                               <div className="tc-item">
-                                <h5>2005</h5>
+                                <h5>2007</h5>
                                 <div>
-                                  START OF<br/> 
-                                  CERAMIC<br/>
-                                  NON-STICK<br/> 
+                                  START OF
+                                  <br />
+                                  CERAMIC
+                                  <br />
+                                  NON-STICK
+                                  <br />
                                   BRAND: GREENPAN
                                 </div>
                               </div>
@@ -328,17 +332,25 @@ export default () => (
                               <div className="tc-item">
                                 <h5>2008</h5>
                                 <div>
-                                AQUISITION<br/>
-                                THERMOLON<sup>TM</sup>
+                                  AQUISITION
+                                  <br />
+                                  THERMOLON<sup>TM</sup>
                                 </div>
                               </div>
                             </li>
                             <li>
                               <div className="tc-item">
                                 <h5>2011</h5>
-                                <div>START OF<br/> CERAMIC<br/> NON-STICK<br/> BRANDS:<br/>
-GREENCHEF<br/>
-&amp; GREENLIFE</div>
+                                <div>
+                                  START OF
+                                  <br /> CERAMIC
+                                  <br /> NON-STICK
+                                  <br /> BRANDS:
+                                  <br />
+                                  GREENCHEF
+                                  <br />
+                                  &amp; GREENLIFE
+                                </div>
                               </div>
                             </li>
                             <li>
@@ -350,16 +362,17 @@ GREENCHEF<br/>
                             <li>
                               <div className="tc-item">
                                 <h5>2016</h5>
-                                <div>START OF CERAMIC NON-STICK BRAND:
-BLUE DIAMOND</div>
+                                <div>
+                                  START OF CERAMIC NON-STICK BRAND: BLUE DIAMOND
+                                </div>
                               </div>
                             </li>
                             <li>
                               <div className="tc-item">
                                 <h5>2018</h5>
                                 <div>
-                                AQUISITION DUTCH MARKET LEADER IN COOKWARE: BK, KELTUM,
-GERO, VAN KEMPEN EN BEGEER
+                                  AQUISITION DUTCH MARKET LEADER IN COOKWARE:
+                                  BK, KELTUM, GERO, VAN KEMPEN EN BEGEER
                                 </div>
                               </div>
                             </li>
@@ -383,7 +396,7 @@ GERO, VAN KEMPEN EN BEGEER
         </div>
       )}
     />
-        <Parallax className="fork" x={[80, -30]} y={[50, 10]} tagOuter="figure">
+    <Parallax className="fork" x={[80, -30]} y={[50, 10]} tagOuter="figure">
       <img src={fork} />
     </Parallax>
   </Waw>

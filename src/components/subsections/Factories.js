@@ -93,7 +93,7 @@ export default () => (
                   <div className="col-md-6 col-lg-4 col-sm-6 col-12">
                     <div className="w-c-box-main">
                       <div className="w-c-box">
-                        <h3>MERTEN &amp; STORCK</h3>
+                        <h3>MERTEN &amp; STORCK GERMANY</h3>
                         <ul className="city-name">
                           <li>
                             <Link to="germany" asModal>
