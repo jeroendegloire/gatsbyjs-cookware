@@ -306,7 +306,7 @@ export default () => (
                               <div className="tc-item">
                                 <h5>2005</h5>
                                 <div>
-                                  AQUISITION
+                                  START-UP OF
                                   <br />
                                   ANOTECH
                                   <br />

@@ -14,32 +14,31 @@ import flagUs from '../../images/flag--us.svg'
 import map from '../../images/world-map-optimized.svg'
 
 const Offices = styled.section`
-.city-1:before {
-  background-image: url(${flagBelgium});
-}
-.city-2:before {
-  background-image: url(${flagNetherlands});
-}
-.city-3:before {
-  background-image: url(${flagUk});
-}
-.city-4:before {
-  background-image: url(${flagUs});
-}
-.city-5:before {
-  background-image: url(${flagJapan});
-}
-.city-6:before {
-  background-image: url(${flagHongKong});
-}
+  .city-1:before {
+    background-image: url(${flagBelgium});
+  }
+  .city-2:before {
+    background-image: url(${flagNetherlands});
+  }
+  .city-3:before {
+    background-image: url(${flagUk});
+  }
+  .city-4:before {
+    background-image: url(${flagUs});
+  }
+  .city-5:before {
+    background-image: url(${flagJapan});
+  }
+  .city-6:before {
+    background-image: url(${flagHongKong});
+  }
 
-.waw-sec-title {
-  background-image: url(${map});
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 30px 0;
-}
-
+  .waw-sec-title {
+    background-image: url(${map});
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0;
+  }
 `
 
 export default () => (
@@ -67,27 +66,35 @@ export default () => (
                         <h3>EMEA</h3>
                         <ul className="city-name">
                           <li>
-                          <Link to="belgium" asModal>
-                            <button className="dark-perot city-1">
-                              Visit<br/>
-                              Belgium<br/>
-                              Office
-                            </button>
-                          </Link>
+                            <Link to="belgium" asModal>
+                              <button className="dark-perot city-1">
+                                Visit
+                                <br />
+                                Belgium
+                                <br />
+                                Office
+                              </button>
+                            </Link>
                           </li>
                           <li>
-                          <Link to="netherlands" asModal>
-                            <button className="dark-perot city-2">
-                              Visit<br/>
-                              Netherlands<br/>
-                              Office
-                            </button>
-                          </Link>
+                            <Link to="netherlands" asModal>
+                              <button className="dark-perot city-2">
+                                Visit
+                                <br />
+                                Netherlands
+                                <br />
+                                Office
+                              </button>
+                            </Link>
                           </li>
                           <li>
-                          <Link to="uk" asModal>
-                            <button className="dark-perot city-3">Visit<br/> Uk<br/> Office</button>
-                          </Link>
+                            <Link to="uk" asModal>
+                              <button className="dark-perot city-3">
+                                Visit
+                                <br /> Uk
+                                <br /> Office
+                              </button>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -100,7 +107,11 @@ export default () => (
                         <ul className="city-name">
                           <li>
                             <Link to="us" asModal>
-                              <button className="dark-perot city-4">Visit<br/> Us<br/> Offices</button>
+                              <button className="dark-perot city-4">
+                                Visit
+                                <br /> USA
+                                <br /> Office
+                              </button>
                             </Link>
                           </li>
                         </ul>
@@ -115,13 +126,19 @@ export default () => (
                           <li>
                             <Link to="hongkong" asModal>
                               <button className="dark-perot city-6">
-                                Visit<br/> Hong Kong<br/> Office
+                                Visit
+                                <br /> Hong Kong
+                                <br /> Office
                               </button>
                             </Link>
                           </li>
                           <li>
                             <Link to="japan" asModal>
-                              <button className="dark-perot city-5">Visit<br/> Japan<br/> Office</button>
+                              <button className="dark-perot city-5">
+                                Visit
+                                <br /> Japan
+                                <br /> Office
+                              </button>
                             </Link>
                           </li>
                         </ul>
