@@ -84,6 +84,10 @@ export default () => (
                           <span className="function">MANAGING DIRECTOR</span>
                         </li>
                       </ul>
+
+                      <a href="mailto:info@cookware-co.com" className="button">
+                        <i className="icon-mail"></i>CONTACT US
+                      </a>
                     </div>
                   </div>
                   <div className="col-md-8 office-adderess">

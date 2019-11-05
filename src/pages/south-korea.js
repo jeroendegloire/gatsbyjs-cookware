@@ -82,20 +82,22 @@ export default () => (
                     </div>
                     <h3>Who to contact?</h3>
 
-                      <ul className="contact-list">
-                        <li>C.K. PARK <span className="function">PRESIDENT</span></li>
-                      </ul>
+                    <ul className="contact-list">
+                      <li>
+                        C.K. PARK <span className="function">PRESIDENT</span>
+                      </li>
+                    </ul>
 
                     <Iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.6096591821038!2d128.83502445118313!3d35.091484580239495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568da923987bee7%3A0xdd0de2ad80a46123!2s1530-2%20Songjeong-dong%2C%20Gangseo-gu%2C%20Busan%2C%20Zuid-Korea!5e0!3m2!1snl!2sbe!4v1571925037106!5m2!1snl!2sbe"
-                        width="100%"
-                        height="250"
-                        frameborder="0"
-                        style="border:0;"
-                        allowfullscreen=""
-                      />
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.6096591821038!2d128.83502445118313!3d35.091484580239495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568da923987bee7%3A0xdd0de2ad80a46123!2s1530-2%20Songjeong-dong%2C%20Gangseo-gu%2C%20Busan%2C%20Zuid-Korea!5e0!3m2!1snl!2sbe!4v1571925037106!5m2!1snl!2sbe"
+                      width="100%"
+                      height="250"
+                      frameborder="0"
+                      style="border:0;"
+                      allowfullscreen=""
+                    />
                     <p>
-                      <br/>
+                      <br />
                       1530-2, Songjeong-dong, Gangseo-gu,
                       <br />
                       Busan, Republic of Korea
@@ -120,8 +122,11 @@ export default () => (
                       coatings for cookware, securing its position as worldwide
                       n°1 in ceramic non-stick.
                     </p>
-                  </div>
 
+                    <a href="mailto:info@cookware-co.com" className="button">
+                      <i className="icon-mail"></i>CONTACT US
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -129,14 +134,14 @@ export default () => (
         </div>
       </div>
       <Link
-                    className="button-back"
-                    to="/"
-                    state={{
-                      noScroll: true,
-                    }}
-                  >
-                    <img src={backIcon} className="back-icon" alt="" />
-                  </Link>
+        className="button-back"
+        to="/"
+        state={{
+          noScroll: true,
+        }}
+      >
+        <img src={backIcon} className="back-icon" alt="" />
+      </Link>
     </Office>
   </Layout>
 )

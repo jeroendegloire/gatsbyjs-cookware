@@ -75,55 +75,66 @@ export default () => (
                       <h3>Who to contact?</h3>
 
                       <ul className="contact-list">
-                        <li>DIETER NAESSENS <span className="function">PRESIDENT</span></li>
-                        <li>JESSICA HUANG <span className="function">CFO</span></li>
-                        <li>LISE VAN DEN BERGHE <span className="function">SALES &amp; MARKETING MANAGER</span></li>
+                        <li>
+                          DIETER NAESSENS{' '}
+                          <span className="function">PRESIDENT</span>
+                        </li>
+                        <li>
+                          JESSICA HUANG <span className="function">CFO</span>
+                        </li>
+                        <li>
+                          LISE VAN DEN BERGHE{' '}
+                          <span className="function">
+                            SALES &amp; MARKETING MANAGER
+                          </span>
+                        </li>
                       </ul>
-                    </div>
-                    </div>
-                      <div className="col-md-8 office-adderess">
-                      <Iframe
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14770.05178101749!2d114.208528!3d22.319843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040133e33d26ab%3A0x416708c30c813ca5!2sUnit%203201%2C%20Tower%201%2C%2038%20Wang%20Chiu%20Rd%2C%20Kowloon%20Bay%2C%20Hong%20Kong!5e0!3m2!1sen!2sbe!4v1571831943981!5m2!1sen!2sbe"
-                          width="100%"
-                          height="195"
-                          frameborder="0"
-                          style="border:0;"
-                          allowfullscreen=""
-                        />
-                        <p>
-                        <br/>
-                          Unit 3201, 32/F, Tower 1, Enterprise Square Five{' '}
-                          <br />
-                          38 Wang Chiu Road
-                          <br />
-                          Kowloon Bay, Hong Kong
-                          <br />
-                          +852 3171-2202 <br />
-                          <br />
-                          Hang Seng Bank Limited
-                          <br />
-                          IBAN : 390-152767-201
-                          <br />
-                          SWIFT : HASEHKHH
-                        </p>
-                      </div>
-                    </div>
 
-                  
+                      <a href="mailto:info@cookware-co.com" className="button">
+                        <i className="icon-mail"></i>CONTACT US
+                      </a>
+                    </div>
+                  </div>
+                  <div className="col-md-8 office-adderess">
+                    <Iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14770.05178101749!2d114.208528!3d22.319843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040133e33d26ab%3A0x416708c30c813ca5!2sUnit%203201%2C%20Tower%201%2C%2038%20Wang%20Chiu%20Rd%2C%20Kowloon%20Bay%2C%20Hong%20Kong!5e0!3m2!1sen!2sbe!4v1571831943981!5m2!1sen!2sbe"
+                      width="100%"
+                      height="195"
+                      frameborder="0"
+                      style="border:0;"
+                      allowfullscreen=""
+                    />
+                    <p>
+                      <br />
+                      Unit 3201, 32/F, Tower 1, Enterprise Square Five <br />
+                      38 Wang Chiu Road
+                      <br />
+                      Kowloon Bay, Hong Kong
+                      <br />
+                      +852 3171-2202 <br />
+                      <br />
+                      Hang Seng Bank Limited
+                      <br />
+                      IBAN : 390-152767-201
+                      <br />
+                      SWIFT : HASEHKHH
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <Link
-                    className="button-back"
-                    to="/"
-                    state={{
-                      noScroll: true,
-                    }}
-                  >
-                    <img src={backIcon} className="back-icon" alt="" />
-                  </Link>
+      </div>
+      <Link
+        className="button-back"
+        to="/"
+        state={{
+          noScroll: true,
+        }}
+      >
+        <img src={backIcon} className="back-icon" alt="" />
+      </Link>
     </Office>
   </Layout>
 )

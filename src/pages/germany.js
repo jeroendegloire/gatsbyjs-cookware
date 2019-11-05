@@ -81,25 +81,29 @@ export default () => (
 
                     <h3>Who to contact?</h3>
 
-                      <ul className="contact-list">
-                        <li>JENS JUNGMANN <span className="function">PRESIDENT</span></li>
-                        <li>KATHY MERCKX <span className="function">CFO</span></li>
-                      </ul>
-                      <Iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.4899150605447!2d7.730231015780639!3d51.79720827968382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9a0387fd5f303%3A0xd9335092d83aa5d6!2sAm%20Ladestrang%201%2C%2048317%20Drensteinfurt%2C%20Germany!5e0!3m2!1sen!2sbe!4v1568619654972!5m2!1sen!2sbe"
-                        width="100%"
-                        height="250"
-                        frameborder="0"
-                        style="border:0;"
-                        allowfullscreen=""
-                      />
+                    <ul className="contact-list">
+                      <li>
+                        JENS JUNGMANN{' '}
+                        <span className="function">PRESIDENT</span>
+                      </li>
+                      <li>
+                        KATHY MERCKX <span className="function">CFO</span>
+                      </li>
+                    </ul>
+                    <Iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.4899150605447!2d7.730231015780639!3d51.79720827968382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9a0387fd5f303%3A0xd9335092d83aa5d6!2sAm%20Ladestrang%201%2C%2048317%20Drensteinfurt%2C%20Germany!5e0!3m2!1sen!2sbe!4v1568619654972!5m2!1sen!2sbe"
+                      width="100%"
+                      height="250"
+                      frameborder="0"
+                      style="border:0;"
+                      allowfullscreen=""
+                    />
                     <p>
-                      <br/>
+                      <br />
                       Am Ladestrang 1 <br />
                       48317 Drensteinfurt <br />
                       Deutschland
                     </p>
-
                   </div>
                   <div className="col-md-7">
                     <img
@@ -115,8 +119,11 @@ export default () => (
                       capacity of 550.000 units, varying from cookware and
                       bakeware to pressure cookers and preservers.
                     </p>
-                  </div>
 
+                    <a href="mailto:info@cookware-co.com" className="button">
+                      <i className="icon-mail"></i>CONTACT US
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -124,14 +131,14 @@ export default () => (
         </div>
       </div>
       <Link
-                    className="button-back"
-                    to="/"
-                    state={{
-                      noScroll: true,
-                    }}
-                  >
-                    <img src={backIcon} className="back-icon" alt="" />
-                  </Link>
+        className="button-back"
+        to="/"
+        state={{
+          noScroll: true,
+        }}
+      >
+        <img src={backIcon} className="back-icon" alt="" />
+      </Link>
     </Office>
   </Layout>
 )
