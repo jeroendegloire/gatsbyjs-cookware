@@ -120,7 +120,16 @@ export default () => (
                       bakeware to pressure cookers and preservers.
                     </p>
 
-                    <a href="mailto:info@cookware-co.com" className="button">
+                    <a
+                      className="link"
+                      href="https://www.kochstar.de/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>&#8250;&#8250;</span> MORE INFO
+                    </a>
+
+                    <a href="mailto:info@kochstar.de" className="button">
                       <i className="icon-mail"></i>CONTACT US
                     </a>
                   </div>

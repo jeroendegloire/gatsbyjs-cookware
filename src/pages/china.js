@@ -112,11 +112,7 @@ export default () => (
                     <div className="mt1rem"></div>
                   </div>
                   <div className="col-md-7">
-                    <img
-                      className="logo-ms"
-                      src={Logo}
-                      alt="Merten &amp; storck"
-                    />
+                    <img className="logo-ms" src={Logo} alt="Anotech" />
                     <p>
                       Anotech is a manufacturing company in Hong Kong,
                       specialized in cookware products. The company consists of
@@ -130,7 +126,16 @@ export default () => (
                       technology ensures high-quality standards.
                     </p>
 
-                    <a href="mailto:info@cookware-co.com" className="button">
+                    <a
+                      className="link"
+                      href="https://www.anotech-intl.com/company.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>&#8250;&#8250;</span> MORE INFO
+                    </a>
+
+                    <a href="mailto:info@anotech-intl.com" className="button">
                       <i className="icon-mail"></i>CONTACT US
                     </a>
                   </div>

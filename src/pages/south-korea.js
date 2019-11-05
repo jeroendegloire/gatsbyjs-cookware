@@ -123,7 +123,16 @@ export default () => (
                       n°1 in ceramic non-stick.
                     </p>
 
-                    <a href="mailto:info@cookware-co.com" className="button">
+                    <a
+                      className="link"
+                      href="https://www.thermolon.co.kr/home-kr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>&#8250;&#8250;</span> MORE INFO
+                    </a>
+
+                    <a href="mailto:info@thermolon.co.kr" className="button">
                       <i className="icon-mail"></i>CONTACT US
                     </a>
                   </div>
