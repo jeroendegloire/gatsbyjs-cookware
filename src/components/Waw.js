@@ -301,7 +301,7 @@ export default () => (
                             the production and distribution of our products. We
                             have sales offices in Europe, the United States and
                             Asia as well as state-of-the-art production
-                            facilities in Korea, China and Europe. We have high
+                            facilities in Korea, China and Germany. We have high
                             quality standards (eg. ISO-certificates) and work
                             hard to reduce our environmental impact.
                           </p>
