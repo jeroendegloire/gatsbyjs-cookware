@@ -145,51 +145,69 @@ const Waw = styled.section`
   }
 
   ul.timeline-content {
-    display: flex;
+    padding-bottom: 4rem;
+    ${breakpoint('md')`
+      display: flex;
+      padding-bottom: 0;`
+    };
     position: relative;
 
     &:before {
       content: '';
       position: absolute;
+      left: calc(50% - 2px);
+      top: 0;
+      bottom: 0;
+      right: calc(50% - 2px);
+      height: 100%;
+      background: #7c8c42;
+      ${breakpoint('md')`
       top: 50%;
       height: 3px;
-      background: #7c8c42;
       left: -25px;
       right: -15px;
+      `};
     }
 
     &:after {
       content: '';
       background: url(${timelineArrow}) no-repeat right;
       position: absolute;
-      right: -30px;
+      background-size: cover;
+      bottom: 0;
+      right: 46.9%;
+      transform: rotate(90deg) translate(50%);
       width: 29px;
       height: 33px;
+      ${breakpoint('md')`
+      right: -30px;
       top: 50%;
-      transform: translateY(-45%);
-      background-size: cover;
+      transform: translateY(-45%);`};
     }
 
     li {
       position: relative;
-      width: 12.5%;
+      width: calc(60% - 14px);
+      ${breakpoint('md')`
+        width: 12.5%;
+        margin-left: -5%;
+      `};
 
       .tc-item {
         position: relative;
       }
-
-      &:nth-child(7) .tc-item div {
-        max-width: none;
-        width: 200%;
-      }
     }
 
     li:nth-of-type(odd) {
-
-        background: url(${timelineOdd}) no-repeat center;
-        background-size: 65px;
+      width: 100%;
+        ${breakpoint('md')`
+          background: url(${timelineOdd}) no-repeat center;
+          background-size: 65px;
+        `};
+        
 
         &:before {
+          ${breakpoint('md')`
           display: block;
           content: '';
           width: 1px;
@@ -197,22 +215,46 @@ const Waw = styled.section`
           background: #676260;
           left: 50%;
           position: absolute;
-          bottom: calc(50% + 20px);
+          bottom: calc(50% + 20px);`};
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          height: 65px;
+          width: 65px;
+          background: black;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          background: url(${timelineOdd}) center center no-repeat;
+          background-size: 65px;
         }
         
 
         .tc-item {
+          padding-right: 60%;
+          ${breakpoint('md')`
           padding-bottom: 250px;
+          padding-right: 0;
+          `};
         }
 
       }
     }
 
     li:nth-of-type(even) {
+      background: url(${timelineEven}) left center no-repeat; 
+      background-size: 65px;
+      margin-left: calc(50% - 33px);
+      ${breakpoint('md')`
       background: url(${timelineEven}) no-repeat center;
       background-size: 65px;
+      margin-left: 0;
+      `};
 
       &:after {
+        ${breakpoint('md')`
         display: block;
         content: '';
         width: 1px;
@@ -220,11 +262,17 @@ const Waw = styled.section`
         background: #676260;
         left: 50%;
         position: absolute;
-        top: calc(50% + 20px);
+        top: calc(50% + 20px);`};
       }
 
       .tc-item {
+        text-align: right;
+        padding-left: 100px;
+        ${breakpoint('md')`
         margin-top: 320px;
+        text-align: left;
+        padding-left: 0;
+        `};
       }
     }
   }
@@ -244,8 +292,11 @@ const Waw = styled.section`
       display: block;
       text-transform: uppercase;
       hyphens: manual;
+      max-width: 100%;
+      ${breakpoint('md')`
       max-width: 120%;
       background: #d6d6cd;
+      `};
       padding-bottom: 10%;
     }
   }
