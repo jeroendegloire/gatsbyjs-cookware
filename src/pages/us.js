@@ -110,10 +110,10 @@ export default () => (
                       94 North Broadway <br />
                       Irvington, New York 10533 <br />
                       United States of America
-                      <br />
+                      {/*<br />
                       <br />
                       JP Morgan Chase Bank, N.A. <br />
-                      {/* IBAN: 780159310 <br />
+                      IBAN: 780159310 <br />
                       Routing N° 021000021 <br />
                       SWIFT: CHASUS33 */}
                     </p>

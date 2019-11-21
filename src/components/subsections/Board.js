@@ -41,7 +41,7 @@ export default () => (
                             SAM LIU
                             <br />
                             DIETER NAESSENS
-                            <span className="function">MEMBERS</span>
+                            <span className="function">CEO EMEA</span>
                           </li>
                         </ul>
                       </div>
