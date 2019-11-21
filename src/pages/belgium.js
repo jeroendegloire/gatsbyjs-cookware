@@ -74,9 +74,13 @@ export default () => (
                     <h3>Who to contact?</h3>
 
                     <ul className="contact-list">
+                    <li>
+                        DIETER NAESSENS{' '}
+                        <span className="function">CEO EMEA</span>
+                      </li>
                       <li>
                         SOPHIE WETSELS{' '}
-                        <span className="function">PRESIDENT</span>
+                        <span className="function">CEO LOYALTY</span>
                       </li>
                       <li>
                         KATHY MERCKX <span className="function">CFO</span>

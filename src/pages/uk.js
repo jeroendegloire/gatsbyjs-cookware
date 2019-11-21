@@ -76,8 +76,8 @@ export default () => (
 
                       <ul className="contact-list">
                         <li>
-                          SOPHIE WETSELS{' '}
-                          <span className="function">PRESIDENT</span>
+                          DIETER NAESSENS{' '}
+                          <span className="function">CEO EMEA</span>
                         </li>
                         <li>
                           KATHY MERCKX <span className="function">CFO</span>

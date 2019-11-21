@@ -77,7 +77,7 @@ export default () => (
                       <ul className="contact-list">
                         <li>
                           JACOB MAURER{' '}
-                          <span className="function">PRESIDENT</span>
+                          <span className="function">CEO AMERICAS</span>
                         </li>
                         <li>
                           DON HILDEBRAND <span className="function">CFO</span>
@@ -113,9 +113,9 @@ export default () => (
                       <br />
                       <br />
                       JP Morgan Chase Bank, N.A. <br />
-                      IBAN: 780159310 <br />
+                      {/* IBAN: 780159310 <br />
                       Routing N° 021000021 <br />
-                      SWIFT: CHASUS33
+                      SWIFT: CHASUS33 */}
                     </p>
                   </div>
                   <div className="col-md-4 office-adderess">
