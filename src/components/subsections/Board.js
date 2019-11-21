@@ -41,7 +41,7 @@ export default () => (
                             SAM LIU
                             <br />
                             DIETER NAESSENS
-                            <span className="function">CEO EMEA</span>
+                            <span className="function">MEMBERS</span>
                           </li>
                         </ul>
                       </div>
@@ -52,7 +52,7 @@ export default () => (
                       <div className="w-c-box">
                         <h3>
                           <br />
-                          PRESIDENT
+                          CEO EMEA
                         </h3>
                         <ul>
                           <li>DIETER NAESSENS</li>
