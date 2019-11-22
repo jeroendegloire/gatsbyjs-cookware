@@ -211,13 +211,6 @@ article {
 	font-weight: 700;
 }
 
-.waw-board-bake {
-	background: #cdd476;
-	position: relative;
-	padding-bottom: 150px;
-	padding-top: 100px;
-}
-
 .waw-sec-content-main {
 	text-align: center;
 }
@@ -287,6 +280,14 @@ article {
 		font-size: 12px;
 		display: block;
 	}
+}
+
+//.waw-board-bake,
+.waw-offices-bake {
+	background: #cdd476;
+	position: relative;
+	padding-bottom: 150px;
+	padding-top: 100px;
 }
 
 .waw-offices-bake {

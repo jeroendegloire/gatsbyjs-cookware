@@ -92,7 +92,7 @@ export default () => (
       </Fade>
     </div>
 
-    <Board />
+    {/* <Board /> */}
     <Parallax className="spoon" x={[-50, 0]} tagOuter="figure">
       <img src={spoon} />
     </Parallax>
