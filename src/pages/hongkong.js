@@ -85,7 +85,7 @@ export default () => (
                         <li>
                           LISE VAN DEN BERGHE{' '}
                           <span className="function">
-                            SALES &amp; MARKETING MANAGER
+                            SALES DIRECTOR APAC
                           </span>
                         </li>
                       </ul>
@@ -115,7 +115,7 @@ export default () => (
                       <br />
                       Hang Seng Bank Limited
                       <br />
-                      IBAN : 390-152767-201
+                      IBAN : 390-152767-222
                       <br />
                       SWIFT : HASEHKHH
                     </p>

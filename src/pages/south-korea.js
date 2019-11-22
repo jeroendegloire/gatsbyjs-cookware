@@ -87,9 +87,8 @@ export default () => (
                         C.K. PARK <span className="function">PRESIDENT</span>
                       </li>
                     </ul>
-
                     <Iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.6096591821038!2d128.83502445118313!3d35.091484580239495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568da923987bee7%3A0xdd0de2ad80a46123!2s1530-2%20Songjeong-dong%2C%20Gangseo-gu%2C%20Busan%2C%20Zuid-Korea!5e0!3m2!1snl!2sbe!4v1571925037106!5m2!1snl!2sbe"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.049886581979!2d129.0697822509556!3d35.08048627019376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eecb5b984257%3A0xfed53963badafb43!2s11%20Dongsamdong-ro%2014beon-gil%2C%20Dongsam%201(il)-dong%2C%20Yeongdo-gu%2C%20Busan%2C%20Zuid-Korea!5e0!3m2!1snl!2sbe!4v1574417019739!5m2!1snl!2sbe"
                       width="100%"
                       height="250"
                       frameborder="0"
@@ -98,11 +97,10 @@ export default () => (
                     />
                     <p>
                       <br />
-                      1530-2, Songjeong-dong, Gangseo-gu,
-                      <br />
-                      Busan, Republic of Korea
-                      <br />
-                      +82 51 831 8863
+                      11-16, Noksan sandan 165-Ro, 14beon-Gil, Songjeong-Dong, Gangseo-Gu, Busan, South Korea<br />
+                      Zip : 46752<br />
+                      TEL (82) 51 831 8863<br />
+                      FAX (82) 51 467 2367
                     </p>
                   </div>
                   <div className="col-md-7">
