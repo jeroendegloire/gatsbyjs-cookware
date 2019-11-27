@@ -56,8 +56,8 @@ export default () => (
             <div className="text-wrapper">
               <p>
                 Keltum is a famous Dutch brand, which was founded in 1936. It’s
-                part of the renowned Dutch company Van Kempen & Begeer. Keltum
-                has a long tradition of silver plated cutlery. The brand is
+                part of the renowned Dutch company Van Kempen &amp; Begeer. Keltum
+                has a long tradition of silver plated stainless steel cutlery. The brand is
                 known for its craftsmanship and high-quality materials. The
                 beautiful collections have a timeless design and turn every
                 dinner into a special experience. Recently, Keltum launched its
@@ -66,13 +66,15 @@ export default () => (
             </div>
 
             <a
-              href="https://www.keltum-tabletalks.com"
+              href="https://www.keltum.nl"
               className="link"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span>&#8250;&#8250;</span> VISIT WEBSITE
             </a>
+
+            <a href="https://www.keltum-tabletalks.com/" className="link" target="_blank" rel="noopener noreferrer">Keltum Tabletalks</a>
 
             <Link
               className="button-back"

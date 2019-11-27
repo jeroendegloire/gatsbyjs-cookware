@@ -53,7 +53,7 @@ export default () => (
                 <div className="row ">
                   <div className="col-md-12">
                     <div className="temp-title">
-                      <h1>GreenPan Japan Ltd.</h1>
+                      <h1>The Cookware Company,</h1>
                       <h2>(Japan)</h2>
                     </div>
                   </div>

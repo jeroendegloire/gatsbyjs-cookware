@@ -269,7 +269,7 @@ const VacanciesPage = () => (
                   </a>
 
                   <a
-                    className="dark-perot city-3"
+                    className="dark-perot city-4"
                     target="_blank" rel="noopener noreferrer"
                     href="https://www.greenpan.us/wewantyou"
                   >
