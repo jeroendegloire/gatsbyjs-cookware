@@ -127,7 +127,7 @@ export default () => (
                     <br />
                     BNP PARIBAS FORTIS
                     <br />
-                    IBAN BE48 0017 65143 1127
+                    IBAN BE48 0017 6513 1127
                     <br />
                     GEBABBEB
                   </p>
