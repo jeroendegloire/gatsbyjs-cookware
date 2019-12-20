@@ -534,7 +534,7 @@ article {
 
 .city-temp-wrep {
 	position: relative;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 	height: 100%;
 
 	.button {
@@ -660,5 +660,5 @@ iframe {
 }
 
 .ReactModal__Content {
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
