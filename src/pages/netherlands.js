@@ -136,9 +136,9 @@ export default () => (
                     />
                     <h5>BV Koninklijke Van Kempen en Begeer </h5>
                     <p className="mb20">
-                      Rotterdamseweg 196
+                      Klopperman 16
                       <br />
-                      2628 AR Delft
+                      2292 JD Wateringen
                       <br />
                       Nederland
                     </p>
