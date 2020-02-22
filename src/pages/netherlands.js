@@ -57,7 +57,7 @@ export default () => (
                       <br />
                       BV Koninklijke Van Kempen en Begeer
                     </h1>
-                    <h2>(Delft, The Netherlands)</h2>
+                    <h2>(Wateringen, The Netherlands)</h2>
                   </div>
                 </div>
               </div>
@@ -86,10 +86,6 @@ export default () => (
                         KATHY MERCKX <span className="function">CFO</span>
                       </li>
                       <li>
-                        RICHARD FRERIKS{' '}
-                        <span className="function">DIRECTEUR BK</span>
-                      </li>
-                      <li>
                         ELIZA GABRIËL <span className="function">HR</span>
                       </li>
                     </ul>
@@ -111,9 +107,9 @@ export default () => (
                     />
                     <h5>BK Cookware BV </h5>
                     <p className="mb20">
-                      Rotterdamseweg 196
+                      Klopperman 16
                       <br />
-                      2628 AR Delft
+                      2292 JD Wateringen
                       <br />
                       Nederland
                     </p>

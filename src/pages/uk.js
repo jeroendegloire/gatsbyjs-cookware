@@ -82,6 +82,9 @@ export default () => (
                         <li>
                           KATHY MERCKX <span className="function">CFO</span>
                         </li>
+                        <li>
+                          ELIZA GABRIËL <span className="function">HR</span>
+                        </li>
                       </ul>
 
                       <a href="mailto:info@cookware-co.com" className="button">

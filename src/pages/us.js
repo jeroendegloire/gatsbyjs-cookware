@@ -87,7 +87,8 @@ export default () => (
                           <span className="function">VICE PRESIDENT SALES</span>
                         </li>
                         <li>
-                         SERENA SINGH <span className="function">HR</span>
+                          MARGARETE TARANGELO{' '}
+                          <span className="function">HR</span>
                         </li>
                       </ul>
 
