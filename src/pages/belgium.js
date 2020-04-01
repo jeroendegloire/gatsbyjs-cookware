@@ -52,7 +52,7 @@ export default () => (
               <div className="row ">
                 <div className="col-md-12">
                   <div className="temp-title">
-                    <h1>The Cookware Company BVBA,</h1>
+                    <h1>The Cookware Company BV,</h1>
                     <h2>(Drongen, Belgium)</h2>
                   </div>
                 </div>
@@ -74,7 +74,7 @@ export default () => (
                     <h3>Who to contact?</h3>
 
                     <ul className="contact-list">
-                    <li>
+                      <li>
                         DIETER NAESSENS{' '}
                         <span className="function">CEO EMEA</span>
                       </li>
@@ -116,7 +116,7 @@ export default () => (
                     allowfullscreen=""
                   />
                   <p>
-                    <h5>The Cookware Company BVBA</h5>
+                    <h5>The Cookware Company BV</h5>
                     Antoon Catriestraat 12
                     <br />
                     9031 Drongen
