@@ -35,7 +35,7 @@ file_template: ':filename:'
 build:
   preview_docker_image: node:10
   install_dependencies_command: npm install
-  instant_preview_command: npm start
+  instant_preview_command: gatsby develop
   mount_path: '/srv/public'
   working_dir: '/srv'
   preview_output_directory: 'src/dist'
