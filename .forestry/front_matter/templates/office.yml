@@ -7,6 +7,11 @@ fields:
   config:
     required: false
   label: Title
+- name: office__subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
 - name: office__continent
   type: select
   default: EMEA
@@ -35,3 +40,26 @@ fields:
     max: 
     labelField: 
   label: Who to contact
+- name: office__cta_text
+  type: text
+  config:
+    required: false
+  label: CTA text
+  default: Visit [COUNTRYNAME] office
+- name: office__geolocation
+  type: field_group
+  config: {}
+  fields:
+  - name: geolocation__latitude
+    type: text
+    config:
+      required: false
+    label: Latitude
+  - name: geolocation__longtitude
+    type: text
+    config:
+      required: false
+    label: Longtitude
+  label: Geolocation
+  description: You can convert your address into coordinates <a href="https://www.latlong.net/convert-address-to-lat-long.html"
+    title="" target="_blank">here</a>.
