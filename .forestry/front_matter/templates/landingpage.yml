@@ -20,3 +20,10 @@ fields:
       min: 4
       max: 12
   label: Key figures
+- name: sortable_list
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: sortable list
