@@ -5,24 +5,13 @@ fields:
 - name: office_title
   type: text
   config:
-    required: false
+    required: true
   label: Title
 - name: office__subtitle
   type: text
   config:
     required: false
   label: Subtitle
-- name: flag_square
-  type: file
-  config:
-    maxSize: 64
-  label: Flag Square
-  description: Used in call-to-action button on frontpage.
-- name: office__flag_triangle
-  type: file
-  config:
-    maxSize: 64
-  label: Flag Triangle
 - name: office__continent
   type: select
   default: EMEA
@@ -38,6 +27,23 @@ fields:
       file: 
       path: 
   label: Continent
+- name: office__flag_triangle
+  type: file
+  config:
+    maxSize: 64
+  label: Flag Triangle
+- name: flag_square
+  type: file
+  config:
+    maxSize: 64
+  label: Flag Square
+  description: Used in call-to-action button on frontpage.
+- name: office__cta_text
+  type: text
+  config:
+    required: false
+  label: CTA text
+  default: Visit [COUNTRYNAME] office
 - name: office__who_to_contact
   type: field_group_list
   fields:
@@ -51,12 +57,6 @@ fields:
     max: 
     labelField: contact_person__name
   label: Who to contact
-- name: office__cta_text
-  type: text
-  config:
-    required: false
-  label: CTA text
-  default: Visit [COUNTRYNAME] office
 - name: office__branch
   type: field_group_list
   fields:
