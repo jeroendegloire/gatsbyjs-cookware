@@ -2,9 +2,9 @@
 .cache
 node_modules
 yarn-error.log
-#package-lock.json
+package-lock.json
 yarn.lock
 
 # Build directory
-#/public
+/public
 .DS_Store
