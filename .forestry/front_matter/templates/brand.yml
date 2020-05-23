@@ -1,4 +1,37 @@
 ---
 label: Brand
 hide_body: false
-fields: []
+fields:
+- name: brand__title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: brand__body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body
+- name: brand__website_url
+  type: text
+  config:
+    required: false
+  label: Website url
+- name: brand__main_image
+  type: file
+  config:
+    maxSize: 64
+  label: Main image
+- name: brand__teaser_image
+  type: file
+  config:
+    maxSize: 64
+  label: Teaser image
+- name: brand__gallery
+  type: image_gallery
+  config: {}
+  label: Gallery
