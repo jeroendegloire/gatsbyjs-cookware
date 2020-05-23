@@ -10,7 +10,7 @@ sections:
   create: all
   match: "**/*"
   templates:
-  - key-figure
+  - landingpage
 - type: document
   path: key-figures
   label: Key figures
