@@ -88,3 +88,5 @@ fields:
     max: 
     labelField: 
   label: Branch
+pages:
+- offices/office-belgium.md
