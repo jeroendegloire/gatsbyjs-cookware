@@ -8,3 +8,11 @@ fields:
   template: key-figure
   label: Key figures
   description: List of all key figures.
+- name: key_figures_block
+  type: blocks
+  label: Key figures block
+  template_types:
+  - key-figure
+  config:
+    min: 4
+    max: 8
