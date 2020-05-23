@@ -49,6 +49,11 @@ fields:
 - name: office__branch
   type: field_group_list
   fields:
+  - name: branch__title
+    type: text
+    config:
+      required: false
+    label: Title
   - name: body
     type: textarea
     default: ''
