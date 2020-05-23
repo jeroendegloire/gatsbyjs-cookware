@@ -32,18 +32,6 @@ fields:
   config:
     maxSize: 64
   label: Flag Triangle
-- name: flag_square
-  type: file
-  config:
-    maxSize: 64
-  label: Flag Square
-  description: Used in call-to-action button on frontpage.
-- name: office__cta_text
-  type: text
-  config:
-    required: false
-  label: CTA text
-  default: Visit [COUNTRYNAME] office
 - name: office__who_to_contact
   type: field_group_list
   fields:
@@ -104,5 +92,33 @@ fields:
     max: 
     labelField: branch__title
   label: Branch
+- name: office__cta_text
+  type: text
+  config:
+    required: false
+  label: CTA text
+  default: Visit [COUNTRYNAME] office
+- name: flag_square
+  type: file
+  config:
+    maxSize: 64
+  label: Flag Square
+  description: Used in call-to-action button on frontpage.
+- name: office__call_to_action
+  type: field_group
+  config: {}
+  fields:
+  - name: cta__button_text
+    type: text
+    config:
+      required: false
+    label: Button text
+  - name: flag_square
+    type: file
+    config:
+      maxSize: 64
+    label: Flag Square
+  label: Call to action
+  description: Configure the call-to-action for offices overview.
 pages:
 - offices/office-belgium.md
