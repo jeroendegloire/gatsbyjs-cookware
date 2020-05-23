@@ -43,7 +43,7 @@ fields:
   config:
     min: 
     max: 
-    labelField: contact_person__name
+    labelField: ''
   label: Who to contact
 - name: office__branches
   type: field_group_list
