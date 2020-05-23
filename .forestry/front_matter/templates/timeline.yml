@@ -1,4 +1,24 @@
 ---
 label: Timeline
 hide_body: true
-fields: []
+fields:
+- name: timeline__year
+  type: number
+  label: Year
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
+- name: timeline__text
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Text
