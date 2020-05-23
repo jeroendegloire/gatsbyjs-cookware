@@ -46,20 +46,45 @@ fields:
     required: false
   label: CTA text
   default: Visit [COUNTRYNAME] office
-- name: office__geolocation
-  type: field_group
-  config: {}
+- name: office__branch
+  type: field_group_list
   fields:
-  - name: geolocation__latitude
-    type: text
+  - name: body
+    type: textarea
+    default: ''
     config:
       required: false
-    label: Latitude
-  - name: geolocation__longtitude
-    type: text
-    config:
-      required: false
-    label: Longtitude
-  label: Geolocation
-  description: You can convert your address into coordinates <a href="https://www.latlong.net/convert-address-to-lat-long.html"
-    title="" target="_blank">here</a>.
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body
+  - name: branch__geolocation
+    type: field_group
+    config: {}
+    fields:
+    - name: geolocaton__latitude
+      type: number
+      label: Latitude
+      description: ''
+      default: 0
+      required: true
+      config:
+        min: 
+        max: 
+        step: 
+    - name: geolocation__longtitude
+      type: number
+      label: Longtitude
+      description: ''
+      default: 0
+      required: true
+      config:
+        min: 
+        max: 
+        step: 
+    label: Geolocation
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Branch
