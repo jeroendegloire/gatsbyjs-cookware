@@ -27,3 +27,12 @@ fields:
     min: 
     max: 
   label: sortable list
+- name: test
+  type: blocks
+  label: test
+  template_types:
+  - office
+  - brand
+  config:
+    min: 
+    max: 
