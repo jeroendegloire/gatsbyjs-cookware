@@ -1,6 +1,6 @@
 ---
 label: Office
-hide_body: false
+hide_body: true
 fields:
 - name: office_title
   type: text
