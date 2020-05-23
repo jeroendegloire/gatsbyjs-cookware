@@ -7,8 +7,26 @@ fields:
   config:
     required: false
   label: Title
-- name: office__who_to_contact
-  type: include
-  config: {}
-  template: who-to-contact
+- name: office__continent
+  type: select
+  default: EMEA
+  config:
+    required: true
+    options:
+    - EMEA
+    - UNITED STATES
+    - ASIA
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Continent
+- name: who_to_contact
+  type: blocks
   label: Who to contact
+  template_types:
+  - who-to-contact
+  config:
+    min: 1
+    max: 
