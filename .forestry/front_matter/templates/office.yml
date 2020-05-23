@@ -38,7 +38,7 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: contact_person__name
   label: Who to contact
 - name: office__cta_text
   type: text
@@ -91,7 +91,7 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: branch__title
   label: Branch
 pages:
 - offices/office-belgium.md
