@@ -28,5 +28,6 @@ office__branch:
     BNP PARIBAS FORTIS
     IBAN BE48 0017 6513 1127
     GEBABBEB
+  branch__title: The Cookware Company BV
 
 ---
