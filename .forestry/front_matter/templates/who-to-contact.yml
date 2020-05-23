@@ -1,4 +1,14 @@
 ---
-label: Who to contact
-hide_body: false
-fields: []
+label: Contact person
+hide_body: true
+fields:
+- name: contact_person__name
+  type: text
+  config:
+    required: false
+  label: Name
+- name: contact_person__function
+  type: text
+  config:
+    required: false
+  label: Function
