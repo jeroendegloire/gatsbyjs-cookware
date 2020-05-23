@@ -2,17 +2,21 @@
 label: Landingpage
 hide_body: false
 fields:
-- name: landingpage__key_figures
-  type: include
+- name: landingpage__field_group_key_figures
+  type: field_group
   config: {}
-  template: key-figure
+  fields:
+  - name: landingpage__key_figures
+    type: blocks
+    label: Key figures
+    template_types:
+    - key-figure
+    config:
+      min: 4
+      max: 12
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
   label: Key figures
-  description: List of all key figures.
-- name: key_figures_block
-  type: blocks
-  label: Key figures block
-  template_types:
-  - key-figure
-  config:
-    min: 4
-    max: 8
