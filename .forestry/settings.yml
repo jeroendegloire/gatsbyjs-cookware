@@ -9,6 +9,8 @@ sections:
   label: Pages
   create: all
   match: "**/*"
+  templates:
+  - key-figure
 - type: document
   path: key-figures
   label: Key figures
