@@ -18,7 +18,7 @@ fields:
 - name: key_figure__number
   type: number
   label: " Number"
-  description: The number of key figure.
+  description: The key figure number.
   default: 0
   required: true
   config:
@@ -30,12 +30,13 @@ fields:
   config:
     required: false
   label: Unit before
-  description: The unit before the key figure number.
+  description: The unit before key figure number.
 - name: key_figure__unit_after
   type: text
   config:
     required: false
   label: Unit after
+  description: The unit after key figure number.
 - name: key_figure__suffix
   type: text
   config:
