@@ -1,4 +1,9 @@
 ---
 label: Office
 hide_body: false
-fields: []
+fields:
+- name: office_title
+  type: text
+  config:
+    required: false
+  label: Title
