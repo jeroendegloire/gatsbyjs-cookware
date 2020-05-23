@@ -14,18 +14,17 @@
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-modal-routing": "^1.0.2",
-    "gatsby-plugin-netlify-cms": "^4.1.11",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.10",
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.2.11",
     "gatsby-plugin-styled-components": "^3.1.2",
+    "gatsby-remark-normalize-paths": "^1.0.0",
     "gatsby-remark-responsive-iframe": "^2.2.16",
     "gatsby-source-filesystem": "^2.1.9",
     "gatsby-transformer-remark": "^2.6.22",
     "gatsby-transformer-sharp": "^2.2.6",
     "install": "^0.13.0",
-    "netlify-cms-app": "^2.9.7",
     "node-sass": "^4.11.0",
     "npm": "^6.11.1",
     "react": "^16.8.5",
@@ -54,7 +53,6 @@
   },
   "devDependencies": {
     "bootstrap-scss": "^4.3.1",
-    "netlify-cms-backend-fs": "^0.4.4",
     "prettier": "^1.14.2"
   },
   "repository": {

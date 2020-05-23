@@ -95,7 +95,6 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-modal-routing`,
   ],
 }
