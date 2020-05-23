@@ -22,11 +22,16 @@ fields:
       file: 
       path: 
   label: Continent
-- name: who_to_contact
-  type: blocks
-  label: Who to contact
-  template_types:
-  - who-to-contact
+- name: office__who_to_contact
+  type: field_group_list
+  fields:
+  - name: contact_person
+    type: include
+    config: {}
+    template: who-to-contact
+    label: Contact person
   config:
-    min: 1
+    min: 
     max: 
+    labelField: 
+  label: Who to contact
