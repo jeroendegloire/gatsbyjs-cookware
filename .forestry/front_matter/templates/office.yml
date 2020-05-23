@@ -18,6 +18,11 @@ fields:
     maxSize: 64
   label: Flag Square
   description: Used in call-to-action button on frontpage.
+- name: office__flag_triangle
+  type: file
+  config:
+    maxSize: 64
+  label: Flag Triangle
 - name: office__continent
   type: select
   default: EMEA
