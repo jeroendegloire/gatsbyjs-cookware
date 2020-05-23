@@ -1,4 +1,38 @@
 ---
 label: Key figure
 hide_body: true
-fields: []
+fields:
+- name: key_figure__icon
+  type: file
+  config:
+    maxSize: 64
+  label: Icon
+  description: The illustration for the key figure.
+- name: key_figure__prefix
+  type: text
+  config:
+    required: false
+  label: Prefix
+  description: The text above key figure content.
+- name: key_figure__number
+  type: number
+  label: " Number"
+  description: The number of key figure.
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: Key_figure__unit
+  type: text
+  config:
+    required: false
+  label: Unit
+  description: The unit of the key figure number.
+- name: key_figure__suffix
+  type: text
+  config:
+    required: false
+  label: Suffix
+  description: The text below key figure.
