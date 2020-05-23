@@ -1,41 +1,43 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: "/admin"
-webhook_url: 
+admin_path: '/admin'
+webhook_url:
 sections:
-- type: directory
-  path: factories
-  label: Factories
-  create: all
-  match: "**/*"
-- type: directory
-  path: offices
-  label: Offices
-  create: all
-  match: "**/*"
-  templates:
-  - office
-- type: directory
-  path: pages
-  label: Pages
-  create: all
-  match: "**/*"
-  templates:
-  - landingpage
-- type: document
-  path: key-figures
-  label: Key figures
-  read_only: true
+  - type: directory
+    path: factories
+    label: Factories
+    create: all
+    match: '**/*'
+  - type: directory
+    path: offices
+    label: Offices
+    create: all
+    match: '**/*'
+    templates:
+      - office
+  - type: directory
+    path: pages
+    label: Pages
+    create: all
+    match: '**/*'
+    templates:
+      - landingpage
+  - type: document
+    path: key-figures
+    label: Key figures
+    read_only: true
 upload_dir: uploads
-public_path: "/uploads"
+public_path: '/uploads'
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ":filename:"
+file_template: ':filename:'
 build:
-  preview_output_directory: public
-  install_dependencies_command: npm install
   preview_docker_image: node:10
-  mount_path: "/srv"
-  working_dir: "/srv"
-  instant_preview_command: npm run forestry:preview
+  install_dependencies_command: npm install
+  instant_preview_command: npm start
+  mount_path: '/srv'
+  working_dir: '/srv/src'
+  preview_output_directory: 'src/dist'
+  preview_env:
+    - ENV=staging
