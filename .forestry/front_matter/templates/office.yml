@@ -92,18 +92,6 @@ fields:
     max: 
     labelField: branch__title
   label: Branch
-- name: office__cta_text
-  type: text
-  config:
-    required: false
-  label: CTA text
-  default: Visit [COUNTRYNAME] office
-- name: flag_square
-  type: file
-  config:
-    maxSize: 64
-  label: Flag Square
-  description: Used in call-to-action button on frontpage.
 - name: office__call_to_action
   type: field_group
   config: {}
@@ -113,6 +101,7 @@ fields:
     config:
       required: false
     label: Button text
+    default: Visit [COUNTRYNAME] office
   - name: flag_square
     type: file
     config:
