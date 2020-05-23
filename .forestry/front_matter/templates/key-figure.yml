@@ -14,6 +14,7 @@ fields:
     required: false
   label: Prefix
   description: The text above key figure content.
+  default: More than
 - name: key_figure__number
   type: number
   label: " Number"
@@ -24,12 +25,17 @@ fields:
     min: 
     max: 
     step: 
-- name: Key_figure__unit
+- name: key_figure__unit_before
   type: text
   config:
     required: false
-  label: Unit
-  description: The unit of the key figure number.
+  label: Unit before
+  description: The unit before the key figure number.
+- name: key_figure__unit_after
+  type: text
+  config:
+    required: false
+  label: Unit after
 - name: key_figure__suffix
   type: text
   config:
