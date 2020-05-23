@@ -29,7 +29,7 @@ office__branch:
     IBAN BE48 0017 6513 1127
     GEBABBEB
   branch__title: The Cookware Company BV
-office__flag_triangle: ''
+office__flag_triangle: "/uploads/cb-icon-5.png"
 office__call_to_action:
   cta__button_text: Visit Belgium office
   flag_square: "/uploads/flag-belgium.svg"
