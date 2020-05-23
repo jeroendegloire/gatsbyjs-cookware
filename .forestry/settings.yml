@@ -36,8 +36,8 @@ build:
   preview_docker_image: node:10
   install_dependencies_command: npm install
   instant_preview_command: npm start
-  mount_path: '/srv'
-  working_dir: '/srv/src'
+  mount_path: '/public'
+  working_dir: '/src'
   preview_output_directory: 'src/dist'
   preview_env:
     - ENV=staging
