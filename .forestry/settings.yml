@@ -11,9 +11,11 @@ sections:
   match: "**/*"
   templates:
   - key-figure
+  - key-figure
 - type: document
   path: key-figures
   label: Key figures
+  read_only: true
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
