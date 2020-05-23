@@ -32,6 +32,6 @@ office__branch:
 office__flag_triangle: ''
 office__call_to_action:
   cta__button_text: Visit Belgium office
-  flag_square: ''
+  flag_square: "/uploads/flag-belgium.svg"
 
 ---
