@@ -37,7 +37,7 @@ build:
   install_dependencies_command: npm install
   instant_preview_command: npm start
   mount_path: '/public'
-  working_dir: '/src'
+  working_dir: '/'
   preview_output_directory: 'src/dist'
   preview_env:
     - ENV=staging
