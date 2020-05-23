@@ -1,4 +1,9 @@
 ---
 label: Factory
 hide_body: false
-fields: []
+fields:
+- name: factory__title
+  type: text
+  config:
+    required: false
+  label: Title
