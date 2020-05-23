@@ -7,6 +7,21 @@ fields:
   config:
     required: true
   label: Title
+- name: region
+  type: select
+  default: ANOTECH JIANGMEN
+  config:
+    required: true
+    options:
+    - ANOTECH JIANGMEN
+    - THERMOLON KOREA
+    - MERTEN & STORCK GERMANY
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Region
 - name: factory__logo
   type: file
   config:
@@ -26,18 +41,8 @@ fields:
   config:
     required: false
   label: Website url
-- name: region
-  type: select
-  default: ANOTECH JIANGMEN
+- name: factory__email
+  type: text
   config:
-    required: true
-    options:
-    - ANOTECH JIANGMEN
-    - THERMOLON KOREA
-    - MERTEN & STORCK GERMANY
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Region
+    required: false
+  label: Email
