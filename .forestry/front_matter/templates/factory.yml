@@ -5,15 +5,19 @@ fields:
 - name: factory__title
   type: text
   config:
-    required: false
+    required: true
   label: Title
 - name: factory__logo
   type: file
   config:
     maxSize: 64
   label: Logo
-- name: factory__who_to_contact
-  type: include
-  config: {}
-  template: who-to-contact
-  label: Who to contact
+- name: factory__body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body
