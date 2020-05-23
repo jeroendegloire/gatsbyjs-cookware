@@ -21,3 +21,23 @@ fields:
     schema:
       format: markdown
   label: Body
+- name: factory__website_url
+  type: text
+  config:
+    required: false
+  label: Website url
+- name: region
+  type: select
+  default: ANOTECH JIANGMEN
+  config:
+    required: true
+    options:
+    - ANOTECH JIANGMEN
+    - THERMOLON KOREA
+    - MERTEN & STORCK GERMANY
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Region
