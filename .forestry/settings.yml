@@ -5,6 +5,18 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: factories
+  label: Factories
+  create: all
+  match: "**/*"
+- type: directory
+  path: offices
+  label: Offices
+  create: all
+  match: "**/*"
+  templates:
+  - office
+- type: directory
   path: pages
   label: Pages
   create: all
