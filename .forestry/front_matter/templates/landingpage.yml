@@ -1,4 +1,10 @@
 ---
 label: Landingpage
 hide_body: false
-fields: []
+fields:
+- name: landingpage__key_figures
+  type: include
+  config: {}
+  template: key-figure
+  label: Key figures
+  description: List of all key figures.
