@@ -43,9 +43,9 @@ fields:
   config:
     min: 
     max: 
-    labelField: contact_person__name
+    labelField: ''
   label: Who to contact
-- name: office__branch
+- name: office__branches
   type: field_group_list
   fields:
   - name: branch__title
@@ -91,7 +91,7 @@ fields:
     min: 
     max: 
     labelField: branch__title
-  label: Branch
+  label: Branches
 - name: office__call_to_action
   type: field_group
   config: {}

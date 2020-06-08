@@ -33,5 +33,11 @@ office__flag_triangle: "/uploads/cb-icon-5.png"
 office__call_to_action:
   cta__button_text: Visit Belgium office
   flag_square: "/uploads/flag-belgium.svg"
+office__branches:
+- branch__title: ''
+  body: ''
+  branch__geolocation:
+    geolocaton__latitude: 0
+    geolocation__longtitude: 0
 
 ---
