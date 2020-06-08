@@ -98,7 +98,7 @@ export default () => (
                 <div className="col-md-4">
                   <div className="office-adderess">
                     <Iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.3005614815934!2d4.364698515788193!3d52.001400879719355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5947f3b835f%3A0x7289c317adc8f156!2sRotterdamseweg%20196%2C%202628%20AR%20Delft%2C%20Netherlands!5e0!3m2!1sen!2sbe!4v1568623349628!5m2!1sen!2sbe"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2455.528402592662!2d4.298503651640245!3d52.015470879622356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b41059cafd47%3A0x517df0d502e6fa26!2sKlopperman%2016%2C%202292%20JD%20Wateringen%2C%20Nederland!5e0!3m2!1snl!2sbe!4v1591600070657!5m2!1snl!2sbe"
                       width="100%"
                       height="195"
                       frameborder="0"
@@ -127,7 +127,7 @@ export default () => (
                 <div className="col-md-4">
                   <div className="office-adderess">
                     <Iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.300561481596!2d4.364698516068017!3d52.001400879719306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5947f3b835f%3A0x7289c317adc8f156!2sRotterdamseweg%20196%2C%202628%20AR%20Delft%2C%20Nederland!5e0!3m2!1snl!2sbe!4v1571830704790!5m2!1snl!2sbe"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2455.528402592662!2d4.298503651640245!3d52.015470879622356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b41059cafd47%3A0x517df0d502e6fa26!2sKlopperman%2016%2C%202292%20JD%20Wateringen%2C%20Nederland!5e0!3m2!1snl!2sbe!4v1591600070657!5m2!1snl!2sbe"
                       width="100%"
                       height="195"
                       frameborder="0"
