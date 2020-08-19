@@ -222,29 +222,7 @@ export default () => (
                         }
                       }
 
-                      greenpansidebar: file(
-                        relativePath: { eq: "popups/1.jpg" }
-                      ) {
-                        childImageSharp {
-                          fluid(maxWidth: 1200, maxHeight: 1200) {
-                            ...GatsbyImageSharpFluid_withWebp
-                          }
-                        }
-                      }
-
-                      greenchefsidebar: file(
-                        relativePath: { eq: "popups/4.jpg" }
-                      ) {
-                        childImageSharp {
-                          fluid(maxWidth: 600, maxHeight: 600) {
-                            ...GatsbyImageSharpFluid_withWebp
-                          }
-                        }
-                      }
-
-                      vitaverdesidebar: file(
-                        relativePath: { eq: "popups/3.jpg" }
-                      ) {
+                      image13: file(relativePath: { eq: "13.jpg" }) {
                         childImageSharp {
                           fluid(maxWidth: 600, maxHeight: 600) {
                             ...GatsbyImageSharpFluid_withWebp
@@ -346,6 +324,14 @@ export default () => (
                         <Fade>
                           <Link to="/chop-grill" asModal>
                             <Img fluid={data.image12.childImageSharp.fluid} />
+                          </Link>
+                        </Fade>
+                      </div>
+
+                      <div className="col-lg-4 col-sm-6">
+                        <Fade>
+                          <Link to="/moods" asModal>
+                            <Img fluid={data.image13.childImageSharp.fluid} />
                           </Link>
                         </Fade>
                       </div>

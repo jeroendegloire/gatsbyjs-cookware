@@ -3,14 +3,7 @@ import styled from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
 import { graphql, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
-import { Parallax } from 'react-scroll-parallax'
 import Fade from 'react-reveal/Fade'
-
-import timelineEven from '../images/timeline--even.png'
-import timelineOdd from '../images/timeline--odd.png'
-import timelineArrow from '../images/timeline--arrow.svg'
-import pot2 from '../images/pot-2.svg'
-import fork from '../images/fork.svg'
 
 const Waw = styled.section`
   h2,
@@ -134,115 +127,6 @@ const Waw = styled.section`
     background: #7c8c42;
     position: relative;
     padding: 10px;
-  }
-
-  .timeline-title {
-    font-size: 38px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 70px;
-    margin-bottom: 100px;
-  }
-
-  ul.timeline-content {
-    display: flex;
-    position: relative;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      height: 3px;
-      background: #7c8c42;
-      left: -25px;
-      right: -15px;
-    }
-
-    &:after {
-      content: '';
-      background: url(${timelineArrow}) no-repeat right;
-      position: absolute;
-      right: -30px;
-      width: 29px;
-      height: 33px;
-      top: 50%;
-      transform: translateY(-45%);
-      background-size: cover;
-    }
-
-    li {
-      position: relative;
-      width: 12.5%;
-
-      .tc-item {
-        position: relative;
-      }
-    }
-
-    li:nth-of-type(odd) {
-
-        background: url(${timelineOdd}) no-repeat center;
-        background-size: 65px;
-
-        &:before {
-          display: block;
-          content: '';
-          width: 1px;
-          height: 85px;
-          background: #676260;
-          left: 50%;
-          position: absolute;
-          bottom: calc(50% + 20px);
-        }
-        
-
-        .tc-item {
-          padding-bottom: 250px;
-        }
-
-      }
-    }
-
-    li:nth-of-type(even) {
-      background: url(${timelineEven}) no-repeat center;
-      background-size: 65px;
-
-      &:after {
-        display: block;
-        content: '';
-        width: 1px;
-        height: 60px;
-        background: #676260;
-        left: 50%;
-        position: absolute;
-        top: calc(50% + 20px);
-      }
-
-      .tc-item {
-        margin-top: 280px;
-      }
-    }
-  }
-
-  .tc-item {
-    h5 {
-      font-family: 'Montserrat';
-      font-size: 35px;
-      color: #7c8c42;
-    }
-
-    > div {
-      font-size: 13px;
-      color: #676260;
-      font-family: 'Montserrat';
-      font-weight: Bold;
-      display: block;
-      text-transform: uppercase;
-      hyphens: manual;
-      max-width: 120%;
-      background: #d6d6cd;
-      padding-bottom: 10%;
-    }
   }
 `
 

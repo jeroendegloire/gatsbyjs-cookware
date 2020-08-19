@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade'
 import { Parallax } from 'react-scroll-parallax'
-
-import Board from '../components/subsections/Board'
 import Offices from '../components/subsections/Offices'
 import Factories from '../components/subsections/Factories'
 
@@ -92,7 +90,6 @@ export default () => (
       </Fade>
     </div>
 
-    {/* <Board /> */}
     <Parallax className="spoon" x={[-50, 0]} tagOuter="figure">
       <img src={spoon} />
     </Parallax>

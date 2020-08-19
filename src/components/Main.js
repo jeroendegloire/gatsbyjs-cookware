@@ -7,7 +7,6 @@ import Waw from '../components/Waw'
 import History from '../components/History'
 import Contact from '../components/Contact'
 import Brands from '../components/Brands'
-import OfficesFactories from '../components/Offices-Factories'
 
 class Main extends React.Component {
   render() {
@@ -26,14 +25,9 @@ class Main extends React.Component {
           <Hero />
           <Waw />
           <Kf />
-          <History/>
+          <History />
           <Contact />
-         {/*<OfficesFactories />*/}
           <Brands />
-
-          {/* <ModalRoute path="/modal-test" parentPath="/">
-            Hello
-          </ModalRoute> */}
         </article>
       </main>
     )

@@ -34,13 +34,6 @@ export default () => (
             }
           }
         }
-        # thumbnail3: file(relativePath: { eq: "popups/24.jpg" }) {
-        #   childImageSharp {
-        #     fluid(maxWidth: 1200, maxHeight: 1200) {
-        #       ...GatsbyImageSharpFluid_withWebp
-        #     }
-        #   }
-        # }
       }
     `}
     render={data => (
@@ -80,9 +73,6 @@ export default () => (
               <div className="image-wrapper">
                 <Img fluid={data.thumbnail2.childImageSharp.fluid} />
               </div>
-              {/* <div className="image-wrapper">
-                <Img fluid={data.thumbnail3.childImageSharp.fluid} />
-              </div> */}
             </div>
 
             <Link
