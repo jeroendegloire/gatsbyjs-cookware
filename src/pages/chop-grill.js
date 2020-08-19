@@ -100,6 +100,10 @@ export default () => (
             <Link className="link-previous" to="/blue-diamond" asModal>
               ← Go to Blue Diamond
             </Link>
+
+            <Link className="link-next" to="/moods" asModal>
+              Go to Moods →
+            </Link>
           </div>
         </div>
       </Layout>

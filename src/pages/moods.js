@@ -106,7 +106,7 @@ export default () => (
               <img src={backIcon} className="back-icon" alt="" />
             </Link>
 
-            <Link className="link-previous" to="/food-e" asModal>
+            <Link className="link-previous" to="/chop-grill" asModal>
               ← Go Chop &amp; Grill
             </Link>
           </div>
