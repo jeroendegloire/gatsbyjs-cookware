@@ -24,27 +24,6 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `offices`,
-        path: `${__dirname}/src/content/offices`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `factories`,
-        path: `${__dirname}/src/content/factories`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `key-figures`,
-        path: `${__dirname}/src/content/key-figures`,
-      },
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,

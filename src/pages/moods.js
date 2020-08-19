@@ -8,6 +8,7 @@ import breakpoint from 'styled-components-breakpoint'
 
 import backIcon from '../images/back-icon.svg'
 import logo_moods from '../images/logo_moods.svg'
+import moods_info from '../assets/moods_info.pdf'
 
 export default () => (
   <StaticQuery
@@ -65,7 +66,7 @@ export default () => (
             </div>
 
             <a
-              href="/assets/moods_info.pdf"
+              href={moods_info}
               className="link"
               target="_blank"
               rel="noopener noreferrer"
